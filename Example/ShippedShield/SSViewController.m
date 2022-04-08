@@ -9,7 +9,7 @@
 #import "SSViewController.h"
 #import <ShippedShield/ShippedShield.h>
 
-@interface SSViewController ()
+@interface SSViewController () <SSShieldViewDelegate>
 
 @property (nonatomic, strong) SSShieldView *shieldView;
 
@@ -22,7 +22,18 @@
     [super viewDidLoad];
     
     _shieldView = [[SSShieldView alloc] initWithFrame:CGRectMake(16, 80, CGRectGetWidth(self.view.bounds) - 32, 42)];
+    _shieldView.delegate = self;
     [self.view addSubview:_shieldView];
+}
+
+- (void)shieldView:(SSShieldView *)shieldView didUpdateShieldState:(BOOL)isOn
+{
+    NSLog(@"Shield state chagned to %@", isOn ? @"on" : @"off");
+}
+
+- (void)shieldView:(SSShieldView *)shieldView didUpdateFeeAmount:(NSDecimalNumber *)feeAmount
+{
+    
 }
 
 @end

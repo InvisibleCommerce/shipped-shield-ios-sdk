@@ -7,6 +7,7 @@
 
 #import "SSShieldView.h"
 #import "SSUtils.h"
+#import "SSLearnMoreViewController.h"
 
 @interface SSShieldView ()
 
@@ -43,6 +44,7 @@
 - (void)loadViews
 {
     _shieldSwitch = [UISwitch new];
+    [_shieldSwitch addTarget:self action:@selector(shieldStateChanged:) forControlEvents:UIControlEventValueChanged];
     _shieldSwitch.translatesAutoresizingMaskIntoConstraints = NO;
     [self addSubview:_shieldSwitch];
     
@@ -63,6 +65,7 @@
     [_learnMoreButton setAttributedTitle:learnMore forState:UIControlStateNormal];
     [_learnMoreButton setTitleColor:[UIColor colorWithHex:0x4D4D4D] forState:UIControlStateNormal];
     _learnMoreButton.titleLabel.font = [UIFont systemFontOfSize:10 weight:UIFontWeightMedium];
+    [_learnMoreButton addTarget:self action:@selector(presentLearnMoreModal) forControlEvents:UIControlEventTouchUpInside];
     _learnMoreButton.translatesAutoresizingMaskIntoConstraints = NO;
     [_containerView addSubview:_learnMoreButton];
     
@@ -103,9 +106,25 @@
     [_containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[feeLabel]-vSpace-[descLabel]|" options:NSLayoutFormatAlignAllRight metrics:metrics views:views]];
 }
 
+- (void)shieldStateChanged:(id)sender
+{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(shieldView:didUpdateShieldState:)]) {
+        [self.delegate shieldView:self didUpdateShieldState:_shieldSwitch.isOn];
+    }
+}
+
 - (void)requestToUpdateFee
 {
     
+}
+
+- (void)presentLearnMoreModal
+{
+    SSLearnMoreViewController *controller = [[SSLearnMoreViewController alloc] initWithNibName:nil bundle:nil];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
+    
+    UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+    [rootViewController presentViewController:nav animated:YES completion:nil];
 }
 
 @end

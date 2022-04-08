@@ -31,6 +31,15 @@
     return self;
 }
 
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    if ([super initWithCoder:coder]) {
+        [self loadViews];
+        [self loadLayoutConstraints];
+    }
+    return self;
+}
+
 - (void)loadViews
 {
     _shieldSwitch = [UISwitch new];
@@ -92,6 +101,11 @@
     [_containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[titleLabel]-hSpace-[learnMoreButton]->=0-[feeLabel]|" options:NSLayoutFormatAlignAllTop | NSLayoutFormatAlignAllBottom metrics:metrics views:views]];
     [_containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[titleLabel]-vSpace-[descLabel]|" options:NSLayoutFormatAlignAllLeft metrics:metrics views:views]];
     [_containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[feeLabel]-vSpace-[descLabel]|" options:NSLayoutFormatAlignAllRight metrics:metrics views:views]];
+}
+
+- (void)requestToUpdateFee
+{
+    
 }
 
 @end

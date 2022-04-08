@@ -11,6 +11,8 @@
 
 @interface SSViewController ()
 
+@property (nonatomic, strong) SSShieldView *shieldView;
+
 @end
 
 @implementation SSViewController
@@ -19,8 +21,8 @@
 {
     [super viewDidLoad];
     
-    SSShieldView *shieldView = [[SSShieldView alloc] initWithFrame:CGRectMake(16, 80, CGRectGetWidth(self.view.bounds) - 32, 42)];
-    [self.view addSubview:shieldView];
+    _shieldView = [[SSShieldView alloc] initWithFrame:CGRectMake(16, 80, CGRectGetWidth(self.view.bounds) - 32, 42)];
+    [self.view addSubview:_shieldView];
 }
 
 @end

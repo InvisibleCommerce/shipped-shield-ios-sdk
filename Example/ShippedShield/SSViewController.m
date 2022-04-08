@@ -7,6 +7,7 @@
 //
 
 #import "SSViewController.h"
+#import <ShippedShield/ShippedShield.h>
 
 @interface SSViewController ()
 
@@ -17,13 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    SSShieldView *shieldView = [[SSShieldView alloc] initWithFrame:CGRectMake(16, 80, CGRectGetWidth(self.view.bounds) - 32, 42)];
+    [self.view addSubview:shieldView];
 }
 
 @end

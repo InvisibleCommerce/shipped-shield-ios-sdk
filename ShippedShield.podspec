@@ -32,10 +32,10 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'ShippedShield/Classes/**/*'
   
-s.resource_bundles = {
-  'ShippedShield' => ['ShippedShield/Assets/*.png']
-}
+  s.resource_bundles = {
+    'ShippedShield' => ['ShippedShield/Assets/*.png']
+  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'ShippedShield/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
 end

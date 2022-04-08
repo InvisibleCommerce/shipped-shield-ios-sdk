@@ -1,6 +1,5 @@
 # ShippedShield
 
-[![CI Status](https://img.shields.io/travis/Victor Zhu/ShippedShield.svg?style=flat)](https://travis-ci.org/Victor Zhu/ShippedShield)
 [![Version](https://img.shields.io/cocoapods/v/ShippedShield.svg?style=flat)](https://cocoapods.org/pods/ShippedShield)
 [![License](https://img.shields.io/cocoapods/l/ShippedShield.svg?style=flat)](https://cocoapods.org/pods/ShippedShield)
 [![Platform](https://img.shields.io/cocoapods/p/ShippedShield.svg?style=flat)](https://cocoapods.org/pods/ShippedShield)
@@ -19,10 +18,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'ShippedShield'
 ```
-
-## Author
-
-Victor Zhu, ghoyelo@gmail.com
 
 ## License
 

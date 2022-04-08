@@ -3,7 +3,7 @@
 //  ShippedShield
 //
 //  Created by Victor Zhu on 04/07/2022.
-//  Copyright (c) 2022 Victor Zhu. All rights reserved.
+//  Copyright (c) 2022 Invisible Commerce Limited. All rights reserved.
 //
 
 #import "SSAppDelegate.h"

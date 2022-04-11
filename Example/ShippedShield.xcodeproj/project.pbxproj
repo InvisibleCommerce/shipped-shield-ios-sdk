@@ -248,6 +248,9 @@
 				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = "Victor Zhu";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 894XY7M9SU;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -542,11 +545,12 @@
 			baseConfigurationReference = DA20CACBE17E47171A5ED77B /* Pods-ShippedShield_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 894XY7M9SU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShippedShield/ShippedShield-Prefix.pch";
 				INFOPLIST_FILE = "ShippedShield/ShippedShield-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shippedsuite.shippedshield-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
@@ -558,11 +562,12 @@
 			baseConfigurationReference = F82E7F16C7873CB34D7A517E /* Pods-ShippedShield_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 894XY7M9SU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShippedShield/ShippedShield-Prefix.pch";
 				INFOPLIST_FILE = "ShippedShield/ShippedShield-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shippedsuite.shippedshield-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;

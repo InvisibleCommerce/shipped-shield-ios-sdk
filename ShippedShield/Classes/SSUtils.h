@@ -15,4 +15,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface NSDictionary (Utils)
+
+- (NSString *)queryURLEncoding;
+
+@end
+
+@interface NSDate (Utils)
+
++ (NSDate *)dateFromString:(NSString *)string;
+
+@end
+
 NS_ASSUME_NONNULL_END

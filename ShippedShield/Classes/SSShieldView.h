@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 @class SSShieldView;
 @protocol SSShieldViewDelegate <NSObject>
 
-- (void)shieldView:(SSShieldView *)shieldView didUpdateShieldState:(BOOL)isOn;
-- (void)shieldView:(SSShieldView *)shieldView didUpdateFeeAmount:(NSDecimalNumber *)feeAmount;
+- (void)shieldView:(SSShieldView *)shieldView didUpdateShieldState:(BOOL)isShieldOn;
+- (void)shieldView:(SSShieldView *)shieldView didUpdateShieldFee:(NSDecimalNumber *)shieldFee;
 
 @end
 
@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) id <SSShieldViewDelegate> delegate;
 
-- (void)requestToUpdateFee;
+- (void)requestToUpdateShieldFeeWithOrderValue:(NSDecimalNumber *)orderValue;
 
 @end
 

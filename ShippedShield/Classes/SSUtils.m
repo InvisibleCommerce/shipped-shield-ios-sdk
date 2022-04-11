@@ -20,3 +20,28 @@
 }
 
 @end
+
+@implementation NSDictionary (Utils)
+
+- (NSString *)queryURLEncoding
+{
+    NSMutableArray<NSString *> *parametersArray = [NSMutableArray array];
+    [self enumerateKeysAndObjectsUsingBlock:^(NSString *  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        NSString *queryString = [[NSString stringWithFormat:@"%@", obj] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+        [parametersArray addObject:[NSString stringWithFormat:@"%@=%@", key, queryString]];
+    }];
+    return [parametersArray componentsJoinedByString:@"&"];
+}
+
+@end
+
+@implementation NSDate (Utils)
+
++ (NSDate *)dateFromString:(NSString *)string
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSSX"];
+    return [dateFormatter dateFromString:string];
+}
+
+@end

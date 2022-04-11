@@ -26,14 +26,22 @@
     [self.view addSubview:_shieldView];
 }
 
-- (void)shieldView:(SSShieldView *)shieldView didUpdateShieldState:(BOOL)isOn
+- (void)viewWillAppear:(BOOL)animated
 {
-    NSLog(@"Shield state chagned to %@", isOn ? @"on" : @"off");
+    [super viewWillAppear:animated];
+    [_shieldView requestToUpdateShieldFeeWithOrderValue:[[NSDecimalNumber alloc] initWithString:@"129.99"]];
 }
 
-- (void)shieldView:(SSShieldView *)shieldView didUpdateFeeAmount:(NSDecimalNumber *)feeAmount
+#pragma mark - SSShieldViewDelegate
+
+- (void)shieldView:(SSShieldView *)shieldView didUpdateShieldState:(BOOL)isShieldOn
 {
-    
+    NSLog(@"Shield state chagned to %@", isShieldOn ? @"on" : @"off");
+}
+
+- (void)shieldView:(SSShieldView *)shieldView didUpdateShieldFee:(nonnull NSDecimalNumber *)shieldFee
+{
+    NSLog(@"Shield fee updated to %@", shieldFee.stringValue);
 }
 
 @end

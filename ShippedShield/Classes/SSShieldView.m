@@ -8,6 +8,9 @@
 #import "SSShieldView.h"
 #import "SSUtils.h"
 #import "SSLearnMoreViewController.h"
+#import "SSNetworking.h"
+#import "SSShieldRequest.h"
+#import "SSShieldResponse.h"
 
 @interface SSShieldView ()
 
@@ -65,12 +68,12 @@
     [_learnMoreButton setAttributedTitle:learnMore forState:UIControlStateNormal];
     [_learnMoreButton setTitleColor:[UIColor colorWithHex:0x4D4D4D] forState:UIControlStateNormal];
     _learnMoreButton.titleLabel.font = [UIFont systemFontOfSize:10 weight:UIFontWeightMedium];
-    [_learnMoreButton addTarget:self action:@selector(presentLearnMoreModal) forControlEvents:UIControlEventTouchUpInside];
+    [_learnMoreButton addTarget:self action:@selector(displayLearnMoreModal) forControlEvents:UIControlEventTouchUpInside];
     _learnMoreButton.translatesAutoresizingMaskIntoConstraints = NO;
     [_containerView addSubview:_learnMoreButton];
     
     _feeLabel = [UILabel new];
-    _feeLabel.text = @"$0.00";
+    _feeLabel.text = NSLocalizedString(@"N/A", nil);
     _feeLabel.textColor = [UIColor colorWithHex:0x1A1A1A];
     _feeLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightRegular];
     _feeLabel.translatesAutoresizingMaskIntoConstraints = NO;
@@ -113,12 +116,24 @@
     }
 }
 
-- (void)requestToUpdateFee
+- (void)requestToUpdateShieldFeeWithOrderValue:(NSDecimalNumber *)orderValue
 {
-    
+    SSShieldRequest *request = [SSShieldRequest new];
+    request.orderValue = orderValue;
+    __weak __typeof(self)weakSelf = self;
+    [[SSAPIClient sharedClient] send:request handler:^(SSResponse * _Nullable response, NSError * _Nullable error) {
+        __strong __typeof(weakSelf)strongSelf = weakSelf;
+        if (!error && response && [response isKindOfClass:[SSShieldResponse class]]) {
+            SSShieldResponse *shieldResponse = (SSShieldResponse *)response;
+            strongSelf.feeLabel.text = [NSString stringWithFormat:@"$%@", shieldResponse.shieldOffers.shieldFee.stringValue];
+        } else {
+            strongSelf.feeLabel.text = NSLocalizedString(@"N/A", nil);
+            NSLog(@"Failed to update shield fee with order value %@", orderValue);
+        }
+    }];
 }
 
-- (void)presentLearnMoreModal
+- (void)displayLearnMoreModal
 {
     SSLearnMoreViewController *controller = [[SSLearnMoreViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];

@@ -126,9 +126,15 @@
         if (!error && response && [response isKindOfClass:[SSShieldResponse class]]) {
             SSShieldResponse *shieldResponse = (SSShieldResponse *)response;
             strongSelf.feeLabel.text = [NSString stringWithFormat:@"$%@", shieldResponse.shieldOffers.shieldFee.stringValue];
+            if (strongSelf.delegate && [strongSelf.delegate respondsToSelector:@selector(shieldView:didUpdateShieldFee:error:)]) {
+                [strongSelf.delegate shieldView:self didUpdateShieldFee:shieldResponse.shieldOffers.shieldFee error:error];
+            }
         } else {
             strongSelf.feeLabel.text = NSLocalizedString(@"N/A", nil);
             NSLog(@"Failed to update shield fee with order value %@", orderValue);
+            if (strongSelf.delegate && [strongSelf.delegate respondsToSelector:@selector(shieldView:didUpdateShieldFee:error:)]) {
+                [strongSelf.delegate shieldView:self didUpdateShieldFee:nil error:error];
+            }
         }
     }];
 }

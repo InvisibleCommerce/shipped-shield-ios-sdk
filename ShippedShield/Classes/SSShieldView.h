@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol SSShieldViewDelegate <NSObject>
 
 - (void)shieldView:(SSShieldView *)shieldView didUpdateShieldState:(BOOL)isShieldOn;
-- (void)shieldView:(SSShieldView *)shieldView didUpdateShieldFee:(NSDecimalNumber *)shieldFee;
+- (void)shieldView:(SSShieldView *)shieldView didUpdateShieldFee:(nullable NSDecimalNumber *)shieldFee error:(nullable NSError *)error;
 
 @end
 

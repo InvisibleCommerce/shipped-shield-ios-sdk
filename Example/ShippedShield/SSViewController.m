@@ -39,9 +39,13 @@
     NSLog(@"Shield state chagned to %@", isShieldOn ? @"on" : @"off");
 }
 
-- (void)shieldView:(SSShieldView *)shieldView didUpdateShieldFee:(nonnull NSDecimalNumber *)shieldFee
+- (void)shieldView:(SSShieldView *)shieldView didUpdateShieldFee:(nullable NSDecimalNumber *)shieldFee error:(nullable NSError *)error
 {
-    NSLog(@"Shield fee updated to %@", shieldFee.stringValue);
+    if (shieldFee) {
+        NSLog(@"Shield fee updated to %@", shieldFee.stringValue);
+    } else {
+        NSLog(@"Shield fee updated failed.\n%@", error.localizedDescription);
+    }
 }
 
 @end

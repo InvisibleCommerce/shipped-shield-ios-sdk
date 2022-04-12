@@ -9,9 +9,10 @@
 #import "SSViewController.h"
 #import <ShippedShield/ShippedShield.h>
 
-@interface SSViewController () <SSShieldViewDelegate>
+@interface SSViewController () <SSShieldViewDelegate, UITextFieldDelegate>
 
-@property (nonatomic, strong) SSShieldView *shieldView;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet SSShieldView *shieldView;
 
 @end
 
@@ -20,16 +21,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    _shieldView = [[SSShieldView alloc] initWithFrame:CGRectMake(16, 80, CGRectGetWidth(self.view.bounds) - 32, 42)];
     _shieldView.delegate = self;
-    [self.view addSubview:_shieldView];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     [_shieldView requestToUpdateShieldFeeWithOrderValue:[[NSDecimalNumber alloc] initWithString:@"129.99"]];
+}
+
+- (IBAction)viewDidTap:(id)sender
+{
+    [_textField resignFirstResponder];
 }
 
 #pragma mark - SSShieldViewDelegate
@@ -45,6 +48,20 @@
         NSLog(@"Shield fee updated to %@", shieldFee.stringValue);
     } else {
         NSLog(@"Shield fee updated failed.\n%@", error.localizedDescription);
+    }
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    NSDecimalNumber *decimalNumber = [NSDecimalNumber decimalNumberWithString:textField.text];
+    if (decimalNumber) {
+        NSLog(@"Request shield fee for order value %@", decimalNumber.stringValue);
+        [_shieldView requestToUpdateShieldFeeWithOrderValue:decimalNumber];
+    } else {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Invalid amount" message:@"Please input a valid amount for order value." preferredStyle:UIAlertControllerStyleAlert];
+        [self presentViewController:alert animated:YES completion:nil];
     }
 }
 

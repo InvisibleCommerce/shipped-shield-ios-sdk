@@ -1,18 +1,18 @@
 //
-//  SSShieldView.m
+//  SSWidgetView.m
 //  ShippedShield
 //
 //  Created by Victor Zhu on 2022/4/8.
 //
 
-#import "SSShieldView.h"
+#import "SSWidgetView.h"
 #import "SSUtils.h"
 #import "SSLearnMoreViewController.h"
 #import "SSNetworking.h"
 #import "SSShieldRequest.h"
 #import "SSShieldResponse.h"
 
-@interface SSShieldView ()
+@interface SSWidgetView ()
 
 @property (nonatomic, strong) UISwitch *shieldSwitch;
 @property (nonatomic, strong) UIView *containerView;
@@ -20,10 +20,11 @@
 @property (nonatomic, strong) UIButton *learnMoreButton;
 @property (nonatomic, strong) UILabel *feeLabel;
 @property (nonatomic, strong) UILabel *descLabel;
+@property (nonatomic, strong) NSDecimalNumber *shieldFee;
 
 @end
 
-@implementation SSShieldView
+@implementation SSWidgetView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -111,12 +112,10 @@
 
 - (void)shieldStateChanged:(id)sender
 {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(shieldView:didUpdateShieldState:)]) {
-        [self.delegate shieldView:self didUpdateShieldState:_shieldSwitch.isOn];
-    }
+    [self triggerShieldChange];
 }
 
-- (void)requestToUpdateShieldFeeWithOrderValue:(NSDecimalNumber *)orderValue
+- (void)updateOrderValue:(NSDecimalNumber *)orderValue
 {
     SSShieldRequest *request = [SSShieldRequest new];
     request.orderValue = orderValue;
@@ -126,17 +125,24 @@
         if (!error && response && [response isKindOfClass:[SSShieldResponse class]]) {
             SSShieldResponse *shieldResponse = (SSShieldResponse *)response;
             strongSelf.feeLabel.text = [NSString stringWithFormat:@"$%@", shieldResponse.shieldOffers.shieldFee.stringValue];
-            if (strongSelf.delegate && [strongSelf.delegate respondsToSelector:@selector(shieldView:didUpdateShieldFee:error:)]) {
-                [strongSelf.delegate shieldView:self didUpdateShieldFee:shieldResponse.shieldOffers.shieldFee error:error];
-            }
+            strongSelf.shieldFee = shieldResponse.shieldOffers.shieldFee;
+            [strongSelf triggerShieldChange];
         } else {
             strongSelf.feeLabel.text = NSLocalizedString(@"N/A", nil);
+            strongSelf.shieldFee = NSDecimalNumber.zero;
             NSLog(@"Failed to update shield fee with order value %@", orderValue);
-            if (strongSelf.delegate && [strongSelf.delegate respondsToSelector:@selector(shieldView:didUpdateShieldFee:error:)]) {
-                [strongSelf.delegate shieldView:self didUpdateShieldFee:nil error:error];
-            }
         }
     }];
+}
+
+- (void)triggerShieldChange
+{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(shieldView:onChange:)]) {
+        [self.delegate shieldView:self onChange:@{
+            @"isShieldEnabled": @(_shieldSwitch.isOn),
+            @"shieldFee": _shieldFee
+        }];
+    }
 }
 
 - (void)displayLearnMoreModal

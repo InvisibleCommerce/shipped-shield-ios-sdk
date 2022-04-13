@@ -11,7 +11,7 @@
 #import "SSNetworking.h"
 #import "SSShieldRequest.h"
 #import "SSShieldResponse.h"
-#import "SSShieldView.h"
+#import "SSWidgetView.h"
 #import "SSLearnMoreViewController.h"
 
 #endif /* ShippedShield_h */

@@ -9,10 +9,10 @@
 #import "SSViewController.h"
 #import <ShippedShield/ShippedShield.h>
 
-@interface SSViewController () <SSShieldViewDelegate, UITextFieldDelegate>
+@interface SSViewController () <SSWidgetViewDelegate, UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
-@property (weak, nonatomic) IBOutlet SSShieldView *shieldView;
+@property (weak, nonatomic) IBOutlet SSWidgetView *shieldView;
 
 @end
 
@@ -27,7 +27,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [_shieldView requestToUpdateShieldFeeWithOrderValue:[[NSDecimalNumber alloc] initWithString:@"129.99"]];
+    [_shieldView updateOrderValue:[[NSDecimalNumber alloc] initWithString:_textField.text]];
 }
 
 - (IBAction)viewDidTap:(id)sender
@@ -35,20 +35,11 @@
     [_textField resignFirstResponder];
 }
 
-#pragma mark - SSShieldViewDelegate
+#pragma mark - SSWidgetViewDelegate
 
-- (void)shieldView:(SSShieldView *)shieldView didUpdateShieldState:(BOOL)isShieldOn
+- (void)shieldView:(SSWidgetView *)shieldView onChange:(NSDictionary *)values
 {
-    NSLog(@"Shield state chagned to %@", isShieldOn ? @"on" : @"off");
-}
-
-- (void)shieldView:(SSShieldView *)shieldView didUpdateShieldFee:(nullable NSDecimalNumber *)shieldFee error:(nullable NSError *)error
-{
-    if (shieldFee) {
-        NSLog(@"Shield fee updated to %@", shieldFee.stringValue);
-    } else {
-        NSLog(@"Shield fee updated failed.\n%@", error.localizedDescription);
-    }
+    NSLog(@"%@", values);
 }
 
 #pragma mark - UITextFieldDelegate
@@ -58,7 +49,7 @@
     NSDecimalNumber *decimalNumber = [NSDecimalNumber decimalNumberWithString:textField.text];
     if (decimalNumber) {
         NSLog(@"Request shield fee for order value %@", decimalNumber.stringValue);
-        [_shieldView requestToUpdateShieldFeeWithOrderValue:decimalNumber];
+        [_shieldView updateOrderValue:decimalNumber];
     } else {
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Invalid amount" message:@"Please input a valid amount for order value." preferredStyle:UIAlertControllerStyleAlert];
         [self presentViewController:alert animated:YES completion:nil];

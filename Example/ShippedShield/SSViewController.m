@@ -48,8 +48,17 @@
 {
     NSDecimalNumber *decimalNumber = [NSDecimalNumber decimalNumberWithString:textField.text];
     if (decimalNumber) {
-        NSLog(@"Request shield fee for order value %@", decimalNumber.stringValue);
-        [_shieldView updateOrderValue:decimalNumber];
+        NSDecimalNumberHandler *behavior = [NSDecimalNumberHandler decimalNumberHandlerWithRoundingMode:NSRoundPlain
+                                                                                                  scale:2
+                                                                                       raiseOnExactness:NO
+                                                                                        raiseOnOverflow:NO
+                                                                                       raiseOnUnderflow:NO
+                                                                                    raiseOnDivideByZero:NO];
+        
+        NSDecimalNumber *roundedNumber = [decimalNumber decimalNumberByRoundingAccordingToBehavior:behavior];
+        NSLog(@"Request shield fee for order value %@", roundedNumber.stringValue);
+        textField.text = [NSString stringWithFormat:@"%.2f", roundedNumber.doubleValue];
+        [_shieldView updateOrderValue:roundedNumber];
     } else {
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Invalid amount" message:@"Please input a valid amount for order value." preferredStyle:UIAlertControllerStyleAlert];
         [self presentViewController:alert animated:YES completion:nil];

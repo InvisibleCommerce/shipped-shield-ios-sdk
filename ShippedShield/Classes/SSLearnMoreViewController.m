@@ -21,6 +21,11 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Done", nil) style:UIBarButtonItemStyleDone target:self action:@selector(dismiss)];
     
     self.view.backgroundColor = [UIColor whiteColor];
+
+    UIView *headerView = [self headerView];
+    headerView.backgroundColor = [UIColor colorWithHex:0x000000];
+    headerView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:headerView];
     
     UILabel *titleLabel = [UILabel new];
     titleLabel.text = NSLocalizedString(@"Shipped Shield Premium Package Assurance", nil);
@@ -81,7 +86,7 @@
     closeButton.translatesAutoresizingMaskIntoConstraints = NO;
     [actionView addSubview:closeButton];
     
-    NSDictionary *views = NSDictionaryOfVariableBindings(titleLabel, subtitleLabel, tipsView, protectedFirstTipView, protectedSecondTipView, protectedThirdTipView, actionView, descLabel, closeButton);
+    NSDictionary *views = NSDictionaryOfVariableBindings(headerView, titleLabel, subtitleLabel, tipsView, protectedFirstTipView, protectedSecondTipView, protectedThirdTipView, actionView, descLabel, closeButton);
     
     NSDictionary *metrics = @{@"margin": @16,
                               @"vSpace": @24,
@@ -89,8 +94,9 @@
                               @"vSectionSpace": @40
     };
     
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[headerView]|" options:0 metrics:metrics views:views]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-margin-[titleLabel]-margin-|" options:0 metrics:metrics views:views]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-74-[titleLabel]-vSpace-[subtitleLabel]-vSectionSpace-[tipsView]" options:NSLayoutFormatAlignAllLeft | NSLayoutFormatAlignAllRight metrics:metrics views:views]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-50-[headerView(88)]-vSpace-[titleLabel]-vSpace-[subtitleLabel]-vSectionSpace-[tipsView]" options:NSLayoutFormatAlignAllLeft | NSLayoutFormatAlignAllRight metrics:metrics views:views]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[actionView]|" options:0 metrics:metrics views:views]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[tipsView]-vSectionSpace-[actionView]|" options:0 metrics:metrics views:views]];
     
@@ -99,6 +105,23 @@
     
     [actionView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-vSpace-[descLabel]-vSpace-|" options:0 metrics:metrics views:views]];
     [actionView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpace-[descLabel]-vSpace-[closeButton(50)]->=0-|" options:NSLayoutFormatAlignAllLeft | NSLayoutFormatAlignAllRight metrics:metrics views:views]];
+}
+
+- (UIView *)headerView
+{
+    UIView *headerView = [UIView new];
+    
+    UIImageView *logoImageView = [UIImageView new];
+    NSBundle *sdkBundle = [NSBundle bundleForClass:self.class];
+    NSBundle *resourceBundle = [NSBundle bundleWithPath:[sdkBundle pathForResource:@"ShippedShield" ofType:@"bundle"]];
+    logoImageView.image = [UIImage imageNamed:@"header" inBundle:resourceBundle compatibleWithTraitCollection:nil];
+    logoImageView.translatesAutoresizingMaskIntoConstraints = NO;
+    [headerView addSubview:logoImageView];
+    
+    [headerView.centerXAnchor constraintEqualToAnchor:logoImageView.centerXAnchor].active = YES;
+    [headerView.centerYAnchor constraintEqualToAnchor:logoImageView.centerYAnchor].active = YES;
+    
+    return headerView;
 }
 
 - (UIView *)protectedViewWithText:(NSString *)text

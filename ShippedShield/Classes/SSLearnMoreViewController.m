@@ -21,7 +21,7 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Done", nil) style:UIBarButtonItemStyleDone target:self action:@selector(dismiss)];
     
     self.view.backgroundColor = [UIColor whiteColor];
-
+    
     UIView *headerView = [self headerView];
     headerView.backgroundColor = [UIColor colorWithHex:0x000000];
     headerView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -45,66 +45,28 @@
     subtitleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:subtitleLabel];
     
-    UIView *tipsView = [UIView new];
+    UIView *tipsView = [self tipsView];
     tipsView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:tipsView];
     
-    UIView *protectedFirstTipView = [self protectedViewWithText:NSLocalizedString(@"Instant premium package assurance for damage, loss, or theft.", nil)];
-    protectedFirstTipView.translatesAutoresizingMaskIntoConstraints = NO;
-    [tipsView addSubview:protectedFirstTipView];
-    
-    UIView *protectedSecondTipView = [self protectedViewWithText:NSLocalizedString(@"Save time and headache reporting unexpected shipment issues.", nil)];
-    protectedSecondTipView.translatesAutoresizingMaskIntoConstraints = NO;
-    [tipsView addSubview:protectedSecondTipView];
-    
-    UIView *protectedThirdTipView = [self protectedViewWithText:NSLocalizedString(@"Easily resolve issues and get a replacement or refund, hassle-free.", nil)];
-    protectedThirdTipView.translatesAutoresizingMaskIntoConstraints = NO;
-    [tipsView addSubview:protectedThirdTipView];
-    
-    UIView *actionView = [UIView new];
+    UIView *actionView = [self actionView];
     actionView.backgroundColor = [UIColor colorWithHex:0x13747480];
     actionView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:actionView];
     
-    UILabel *descLabel = [UILabel new];
-    descLabel.text = NSLocalizedString(@"Shipped offers shipment protection with tracking services and hassle-free solutions for resolving shipment issues for online purchases that are damaged in transit, lost by the carrier, or stolen immediately after the carrier’s proof of delivery where Shipped monitors the shipment.", nil);
-    descLabel.textColor = [UIColor colorWithHex:0x993c3c43];
-    descLabel.font = [UIFont systemFontOfSize:12 weight:UIFontWeightRegular];
-    descLabel.textAlignment = NSTextAlignmentCenter;
-    descLabel.numberOfLines = 0;
-    descLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    [actionView addSubview:descLabel];
+    NSDictionary *views = NSDictionaryOfVariableBindings(headerView, titleLabel, subtitleLabel, tipsView, actionView);
     
-    UIButton *closeButton = [UIButton new];
-    closeButton.layer.cornerRadius = 10;
-    closeButton.layer.masksToBounds = YES;
-    closeButton.backgroundColor = [UIColor colorWithHex:0xFFC933];
-    [closeButton setTitle:NSLocalizedString(@"Got it!", nil) forState:UIControlStateNormal];
-    [closeButton setTitleColor:[UIColor colorWithHex:0x000000] forState:UIControlStateNormal];
-    closeButton.titleLabel.font = [UIFont systemFontOfSize:17 weight:UIFontWeightSemibold];
-    [closeButton addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
-    closeButton.translatesAutoresizingMaskIntoConstraints = NO;
-    [actionView addSubview:closeButton];
-    
-    NSDictionary *views = NSDictionaryOfVariableBindings(headerView, titleLabel, subtitleLabel, tipsView, protectedFirstTipView, protectedSecondTipView, protectedThirdTipView, actionView, descLabel, closeButton);
-    
-    NSDictionary *metrics = @{@"margin": @16,
+    NSDictionary *metrics = @{@"topPadding": UIDevice.isIpad ? @56: @50,
+                              @"margin": @16,
                               @"vSpace": @24,
-                              @"tipHeight": @40,
-                              @"vSectionSpace": @40
-    };
+                              @"vSectionSpace": @40};
     
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[headerView]|" options:0 metrics:metrics views:views]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-topPadding-[headerView(88)]-vSpace-[titleLabel]" options:0 metrics:metrics views:views]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-margin-[titleLabel]-margin-|" options:0 metrics:metrics views:views]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-50-[headerView(88)]-vSpace-[titleLabel]-vSpace-[subtitleLabel]-vSectionSpace-[tipsView]" options:NSLayoutFormatAlignAllLeft | NSLayoutFormatAlignAllRight metrics:metrics views:views]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[titleLabel]-vSpace-[subtitleLabel]-vSectionSpace-[tipsView]" options:NSLayoutFormatAlignAllLeft | NSLayoutFormatAlignAllRight metrics:metrics views:views]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[actionView]|" options:0 metrics:metrics views:views]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[tipsView]-vSectionSpace-[actionView]|" options:0 metrics:metrics views:views]];
-    
-    [tipsView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-8-[protectedFirstTipView]-8-|" options:0 metrics:metrics views:views]];
-    [tipsView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[protectedFirstTipView(tipHeight)]-vSpace-[protectedSecondTipView(tipHeight)]-vSpace-[protectedThirdTipView(tipHeight)]|" options:NSLayoutFormatAlignAllLeft | NSLayoutFormatAlignAllRight metrics:metrics views:views]];
-    
-    [actionView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-vSpace-[descLabel]-vSpace-|" options:0 metrics:metrics views:views]];
-    [actionView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpace-[descLabel]-vSpace-[closeButton(50)]->=0-|" options:NSLayoutFormatAlignAllLeft | NSLayoutFormatAlignAllRight metrics:metrics views:views]];
 }
 
 - (UIView *)headerView
@@ -152,6 +114,79 @@
     [contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[protectedImageView(imageSize)]" options:NSLayoutFormatAlignAllCenterY metrics:metrics views:views]];
     
     return contentView;
+}
+
+- (UIView *)tipsView
+{
+    UIView *tipsView = [UIView new];
+    
+    UIView *protectedFirstTipView = [self protectedViewWithText:NSLocalizedString(@"Instant premium package assurance for damage, loss, or theft.", nil)];
+    protectedFirstTipView.translatesAutoresizingMaskIntoConstraints = NO;
+    [tipsView addSubview:protectedFirstTipView];
+    
+    UIView *protectedSecondTipView = [self protectedViewWithText:NSLocalizedString(@"Save time and headache reporting unexpected shipment issues.", nil)];
+    protectedSecondTipView.translatesAutoresizingMaskIntoConstraints = NO;
+    [tipsView addSubview:protectedSecondTipView];
+    
+    UIView *protectedThirdTipView = [self protectedViewWithText:NSLocalizedString(@"Easily resolve issues and get a replacement or refund, hassle-free.", nil)];
+    protectedThirdTipView.translatesAutoresizingMaskIntoConstraints = NO;
+    [tipsView addSubview:protectedThirdTipView];
+    
+    NSDictionary *views = NSDictionaryOfVariableBindings(protectedFirstTipView, protectedSecondTipView, protectedThirdTipView);
+    
+    NSDictionary *metrics = @{@"leftPadding": UIDevice.isIpad ? @122 : @8,
+                              @"vSpace": @24,
+                              @"tipHeight": @40};
+    
+    [tipsView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-leftPadding-[protectedFirstTipView]-leftPadding-|" options:0 metrics:metrics views:views]];
+    [tipsView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[protectedFirstTipView(tipHeight)]-vSpace-[protectedSecondTipView(tipHeight)]-vSpace-[protectedThirdTipView(tipHeight)]|" options:NSLayoutFormatAlignAllLeft | NSLayoutFormatAlignAllRight metrics:metrics views:views]];
+    
+    return tipsView;
+}
+
+- (UIView *)actionView
+{
+    UIView *actionView = [UIView new];
+    
+    UIView *containerView = [UIView new];
+    containerView.translatesAutoresizingMaskIntoConstraints = NO;
+    [actionView addSubview:containerView];
+    
+    UILabel *descLabel = [UILabel new];
+    descLabel.text = NSLocalizedString(@"Shipped offers shipment protection with tracking services and hassle-free solutions for resolving shipment issues for online purchases that are damaged in transit, lost by the carrier, or stolen immediately after the carrier’s proof of delivery where Shipped monitors the shipment.", nil);
+    descLabel.textColor = [UIColor colorWithHex:0x993c3c43];
+    descLabel.font = [UIFont systemFontOfSize:12 weight:UIFontWeightRegular];
+    descLabel.textAlignment = NSTextAlignmentCenter;
+    descLabel.numberOfLines = 0;
+    descLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    [containerView addSubview:descLabel];
+    
+    UIButton *closeButton = [UIButton new];
+    closeButton.layer.cornerRadius = 10;
+    closeButton.layer.masksToBounds = YES;
+    closeButton.backgroundColor = [UIColor colorWithHex:0xFFC933];
+    [closeButton setTitle:NSLocalizedString(@"Got it!", nil) forState:UIControlStateNormal];
+    [closeButton setTitleColor:[UIColor colorWithHex:0x000000] forState:UIControlStateNormal];
+    closeButton.titleLabel.font = [UIFont systemFontOfSize:17 weight:UIFontWeightSemibold];
+    [closeButton addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
+    closeButton.translatesAutoresizingMaskIntoConstraints = NO;
+    [containerView addSubview:closeButton];
+    
+    NSDictionary *views = NSDictionaryOfVariableBindings(containerView, descLabel, closeButton);
+    
+    NSDictionary *metrics = @{@"hSpace": UIDevice.isIpad ? @120 : @24,
+                              @"vSpace": @24,
+                              @"leftPadding": UIDevice.isIpad ? @86 : @0
+    };
+    
+    [actionView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpace-[containerView]-hSpace-|" options:0 metrics:metrics views:views]];
+    [actionView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpace-[containerView]-vSpace-|" options:0 metrics:metrics views:views]];
+    
+    [containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[descLabel]|" options:0 metrics:metrics views:views]];
+    [containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-leftPadding-[closeButton]-leftPadding-|" options:0 metrics:metrics views:views]];
+    [containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[descLabel]-vSpace-[closeButton(50)]->=0-|" options:0 metrics:metrics views:views]];
+    
+    return actionView;
 }
 
 - (void)dismiss

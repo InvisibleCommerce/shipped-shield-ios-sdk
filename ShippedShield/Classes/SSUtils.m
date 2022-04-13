@@ -7,6 +7,15 @@
 
 #import "SSUtils.h"
 
+@implementation UIDevice (Utils)
+
++ (BOOL)isIpad
+{
+    return [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad;
+}
+
+@end
+
 @implementation UIColor (Utils)
 
 + (UIColor *)colorWithHex:(NSUInteger)hex

@@ -101,14 +101,14 @@ To get the callback from widget, you need implement the `SSWidgetViewDelegate` d
 
 - (void)widgetView:(SSWidgetView *)widgetView onChange:(NSDictionary *)values
 {
-NSLog(@"Shield widget on change: %@", values);
+    NSLog(@"Shield widget on change: %@", values);
 }
 ```
 
 ```
 Shield widget on change: {
-isShieldEnabled = true;
-shieldFee = "1.82";
+    isShieldEnabled = true;
+    shieldFee = "1.82";
 }
 ```
 
@@ -120,12 +120,12 @@ If you plan to implement the widget yourself to fit the app style, you can still
 
 ```objective-c
 [ShippedShield getShieldFee:[[NSDecimalNumber alloc] initWithString:_textField.text] completion:^(SSShieldOffers * _Nullable offers, NSError * _Nullable error) {
-if (error) {
-NSLog(@"%@", error.localizedDescription);
-return;
-}
+    if (error) {
+        NSLog(@"%@", error.localizedDescription);
+        return;
+    }
 
-NSLog(@"Get shield fee: %@", offers.shieldFee.stringValue);
+    NSLog(@"Get shield fee: %@", offers.shieldFee.stringValue);
 }];
 ```
 
@@ -135,8 +135,8 @@ NSLog(@"Get shield fee: %@", offers.shieldFee.stringValue);
 SSLearnMoreViewController *controller = [[SSLearnMoreViewController alloc] initWithNibName:nil bundle:nil];
 UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
 if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
-nav.modalPresentationStyle = UIModalPresentationFormSheet;
-nav.preferredContentSize = CGSizeMake(650, 600);
+    nav.modalPresentationStyle = UIModalPresentationFormSheet;
+    nav.preferredContentSize = CGSizeMake(650, 600);
 }
 [self presentViewController:nav animated:YES completion:nil];
 ```

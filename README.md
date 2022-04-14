@@ -4,6 +4,8 @@
 [![License](https://img.shields.io/cocoapods/l/ShippedShield.svg?style=flat)](https://cocoapods.org/pods/ShippedShield)
 [![Platform](https://img.shields.io/cocoapods/p/ShippedShield.svg?style=flat)](https://cocoapods.org/pods/ShippedShield)
 
+Shipped Shield offers premium package assurance for shipments that are lost, damaged or stolen. Instantly track and resolve shipment issues hassle-free with the app.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

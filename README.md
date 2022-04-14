@@ -1,12 +1,12 @@
 # ShippedShield iOS SDK
 
-[![Version](https://img.shields.io/cocoapods/v/ShippedShield.svg?style=flat)](https://cocoapods.org/pods/ShippedShield)
-[![License](https://img.shields.io/cocoapods/l/ShippedShield.svg?style=flat)](https://cocoapods.org/pods/ShippedShield)
-[![Platform](https://img.shields.io/cocoapods/p/ShippedShield.svg?style=flat)](https://cocoapods.org/pods/ShippedShield)
+ [![Version](https://img.shields.io/cocoapods/v/ShippedShield.svg?style=flat)](https://cocoapods.org/pods/ShippedShield)
+ [![License](https://img.shields.io/cocoapods/l/ShippedShield.svg?style=flat)](https://cocoapods.org/pods/ShippedShield)
+ [![Platform](https://img.shields.io/cocoapods/p/ShippedShield.svg?style=flat)](https://cocoapods.org/pods/ShippedShield)
+ [![CocoaPods compatible](https://img.shields.io/badge/CocoaPods-compatible-green.svg?style=flat)](https://cocoapods.org)
 <!---
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg?style=flat)](https://github.com/Carthage/Carthage)
 -->
-[![CocoaPods compatible](https://img.shields.io/badge/CocoaPods-compatible-green.svg?style=flat)](https://cocoapods.org)
 
 Shipped Shield offers premium package assurance for shipments that are lost, damaged or stolen. Instantly track and resolve shipment issues hassle-free with the app.
 
@@ -65,13 +65,19 @@ use_frameworks!
 
 ## Setup
 
+Import SDK.
+
+```objective-c
+#import <ShippedShield/ShippedShield.h>
+```
+
 Configure the SDK with your ShippedShield publishable API key.
 
 ```objective-c
-[ShippedShield configurePublicKey:@"Publick key"]
+[ShippedShield configurePublicKey:@"Public key"];
 ```
 
-If you want to test on different endpoint, you can customize mode and payment URL.
+If you want to test on different endpoint, you can customize mode.
 
 ```objective-c
 [ShippedShield setMode:ShippedShieldProductionMode];
@@ -95,14 +101,14 @@ To get the callback from widget, you need implement the `SSWidgetViewDelegate` d
 
 - (void)widgetView:(SSWidgetView *)widgetView onChange:(NSDictionary *)values
 {
-    NSLog(@"Shield widget on change: %@", values);
+NSLog(@"Shield widget on change: %@", values);
 }
 ```
 
 ```
 Shield widget on change: {
-    isShieldEnabled = true;
-    shieldFee = "1.82";
+isShieldEnabled = true;
+shieldFee = "1.82";
 }
 ```
 
@@ -114,12 +120,12 @@ If you plan to implement the widget yourself to fit the app style, you can still
 
 ```objective-c
 [ShippedShield getShieldFee:[[NSDecimalNumber alloc] initWithString:_textField.text] completion:^(SSShieldOffers * _Nullable offers, NSError * _Nullable error) {
-    if (error) {
-        NSLog(@"%@", error.localizedDescription);
-        return;
-    }
-        
-    NSLog(@"Get shield fee: %@", offers.shieldFee.stringValue);
+if (error) {
+NSLog(@"%@", error.localizedDescription);
+return;
+}
+
+NSLog(@"Get shield fee: %@", offers.shieldFee.stringValue);
 }];
 ```
 
@@ -128,9 +134,10 @@ If you plan to implement the widget yourself to fit the app style, you can still
 ```objective-c
 SSLearnMoreViewController *controller = [[SSLearnMoreViewController alloc] initWithNibName:nil bundle:nil];
 UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
+if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
 nav.modalPresentationStyle = UIModalPresentationFormSheet;
 nav.preferredContentSize = CGSizeMake(650, 600);
-
+}
 [self presentViewController:nav animated:YES completion:nil];
 ```
 

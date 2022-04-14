@@ -69,9 +69,11 @@
 {
     SSLearnMoreViewController *controller = [[SSLearnMoreViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
-    nav.modalPresentationStyle = UIModalPresentationFormSheet;
-    nav.preferredContentSize = CGSizeMake(650, 600);
-    
+    if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+        nav.modalPresentationStyle = UIModalPresentationFormSheet;
+        nav.preferredContentSize = CGSizeMake(650, 600);
+    }
+
     [self presentViewController:nav animated:YES completion:nil];
 }
 

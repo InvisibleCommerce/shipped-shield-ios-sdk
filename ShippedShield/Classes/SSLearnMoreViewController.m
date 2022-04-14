@@ -200,11 +200,12 @@
     
     NSDictionary *metrics = @{@"hSpace": UIDevice.isIpad ? @120 : @24,
                               @"vSpace": @24,
-                              @"leftPadding": UIDevice.isIpad ? @86 : @0,
+                              @"leftPadding": UIDevice.isIpad ? @16 : @0,
                               @"bottomPadding": @(24 + (UIDevice.isIpad ? 0 : UIWindow.safeAreaInsets.bottom))
     };
     
-    [actionView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpace-[containerView]-hSpace-|" options:0 metrics:metrics views:views]];
+    [containerView.widthAnchor constraintEqualToAnchor:actionView.widthAnchor multiplier:578.0 / 812.0].active = YES;
+    [containerView.centerXAnchor constraintEqualToAnchor:actionView.centerXAnchor].active = YES;
     [actionView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpace-[containerView]-bottomPadding-|" options:0 metrics:metrics views:views]];
     
     [containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[descLabel]|" options:0 metrics:metrics views:views]];

@@ -160,8 +160,10 @@
 {
     SSLearnMoreViewController *controller = [[SSLearnMoreViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
-    nav.modalPresentationStyle = UIModalPresentationFormSheet;
-    nav.preferredContentSize = CGSizeMake(650, 600);
+    if ([UIDevice isIpad]) {
+        nav.modalPresentationStyle = UIModalPresentationFormSheet;
+        nav.preferredContentSize = CGSizeMake(650, 600);
+    }
     
     UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
     [rootViewController presentViewController:nav animated:YES completion:nil];

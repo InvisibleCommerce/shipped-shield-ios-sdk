@@ -26,6 +26,17 @@
 
 @implementation SSWidgetView
 
+- (instancetype)initWithIsDisabledByDefault:(BOOL)isDisabledByDefault
+{
+    self = [super initWithFrame:CGRectZero];
+    if (self) {
+        [self loadViews];
+        [self loadLayoutConstraints];
+        _shieldSwitch.on = !isDisabledByDefault;
+    }
+    return self;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];

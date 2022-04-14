@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) id <SSWidgetViewDelegate> delegate;
 
+- (instancetype)initWithIsDisabledByDefault:(BOOL)isDisabledByDefault;
+
 - (void)updateOrderValue:(NSDecimalNumber *)orderValue;
 
 @end

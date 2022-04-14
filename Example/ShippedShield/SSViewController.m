@@ -65,6 +65,8 @@
     }
 }
 
+#pragma mark - Customization
+
 - (IBAction)displayLearnMoreModal:(id)sender
 {
     SSLearnMoreViewController *controller = [[SSLearnMoreViewController alloc] initWithNibName:nil bundle:nil];

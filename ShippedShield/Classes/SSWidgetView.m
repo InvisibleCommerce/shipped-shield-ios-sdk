@@ -137,7 +137,7 @@
 - (void)updateOrderValue:(NSDecimalNumber *)orderValue
 {
     __weak __typeof(self)weakSelf = self;
-    [ShippedShield getShieldFee:orderValue completion:^(SSShieldOffers * _Nullable offers, NSError * _Nullable error) {
+    [ShippedShield getShieldFee:orderValue completion:^(SSShieldOffer * _Nullable offer, NSError * _Nullable error) {
         __strong __typeof(weakSelf)strongSelf = weakSelf;
         if (error) {
             strongSelf.feeLabel.text = NSLocalizedString(@"N/A", nil);
@@ -146,8 +146,8 @@
             return;
         }
         
-        strongSelf.feeLabel.text = [NSString stringWithFormat:@"$%@", offers.shieldFee.stringValue];
-        strongSelf.shieldFee = offers.shieldFee;
+        strongSelf.feeLabel.text = [NSString stringWithFormat:@"$%@", offer.shieldFee.stringValue];
+        strongSelf.shieldFee = offer.shieldFee;
         [strongSelf triggerShieldChange];
     }];
 }

@@ -77,7 +77,7 @@ Configure the SDK with your ShippedShield publishable API key.
 [ShippedShield configurePublicKey:@"Public key"];
 ```
 
-If you want to test on different endpoint, you can customize mode.
+If you want to test on different endpoint, you can customize mode. The default is Development mode, so make sure to switch to Production mode for your production build. 
 
 ```objective-c
 [ShippedShield setMode:ShippedShieldProductionMode];
@@ -120,17 +120,17 @@ If you plan to implement the widget yourself to fit the app style, you can still
 - Send the shipped fee request
 
 ```objective-c
-[ShippedShield getShieldFee:[[NSDecimalNumber alloc] initWithString:_textField.text] completion:^(SSShieldOffers * _Nullable offers, NSError * _Nullable error) {
+[ShippedShield getShieldFee:[[NSDecimalNumber alloc] initWithString:_textField.text] completion:^(SSShieldOffer * _Nullable offer, NSError * _Nullable error) {
     if (error) {
         NSLog(@"%@", error.localizedDescription);
         return;
     }
 
-    NSLog(@"Get shield fee: %@", offers.shieldFee.stringValue);
+    NSLog(@"Get shield fee: %@", offer.shieldFee.stringValue);
 }];
 ```
 
-- Dispaly learn more modal
+- Display learn more modal
 
 ```objective-c
 SSLearnMoreViewController *controller = [[SSLearnMoreViewController alloc] initWithNibName:nil bundle:nil];

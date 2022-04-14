@@ -19,7 +19,7 @@
     [[SSAPIClient sharedClient] send:request handler:^(SSResponse * _Nullable response, NSError * _Nullable error) {
         if (!error && response && [response isKindOfClass:[SSShieldResponse class]]) {
             SSShieldResponse *shieldResponse = (SSShieldResponse *)response;
-            completion(shieldResponse.shieldOffers, error);
+            completion(shieldResponse.shieldOffer, error);
         } else {
             completion(nil, error);
         }

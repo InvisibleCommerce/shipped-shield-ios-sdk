@@ -14,7 +14,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Setup ShippedShield
-    [ShippedShield configurePublicKey:@"pk_development_93da2285385a959eb8df7ee3f7ef521b8d12f6b635e05fea40110afbaa158faa"];
+    [ShippedShield configurePublicKey:@"pk_development_117c2ee46c122fb0ce070fbc984e6a4742040f05a1c73f8a900254a1933a0112"];
     
     // Optional, the default mode is development mode
     [ShippedShield setMode:ShippedShieldDevelopmentMode];

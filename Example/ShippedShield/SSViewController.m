@@ -81,13 +81,13 @@
 
 - (IBAction)sendShieldFeeRequest:(id)sender
 {
-    [ShippedShield getShieldFee:[[NSDecimalNumber alloc] initWithString:_textField.text] completion:^(SSShieldOffers * _Nullable offers, NSError * _Nullable error) {
+    [ShippedShield getShieldFee:[[NSDecimalNumber alloc] initWithString:_textField.text] completion:^(SSShieldOffer * _Nullable offer, NSError * _Nullable error) {
         if (error) {
             NSLog(@"%@", error.localizedDescription);
             return;
         }
         
-        NSLog(@"Get shield fee: %@", offers.shieldFee.stringValue);
+        NSLog(@"Get shield fee: %@", offer.shieldFee.stringValue);
     }];
 }
 

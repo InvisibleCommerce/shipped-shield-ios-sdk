@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void (^ShippedShieldFeeHandler)(SSShieldOffers * _Nullable offers, NSError * _Nullable error);
+typedef void (^ShippedShieldFeeHandler)(SSShieldOffer * _Nullable offer, NSError * _Nullable error);
 
 @interface ShippedShield (API)
 

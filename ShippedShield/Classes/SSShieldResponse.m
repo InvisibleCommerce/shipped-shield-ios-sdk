@@ -8,26 +8,26 @@
 #import "SSShieldResponse.h"
 #import "SSUtils.h"
 
-@implementation SSShieldOffers
+@implementation SSShieldOffer
 
 + (id)decodeFromJSON:(NSDictionary *)json
 {
-    SSShieldOffers *shieldOffers = [SSShieldOffers new];
-    shieldOffers.storefrontId = json[@"storefront_id"];
+    SSShieldOffer *shieldOffer = [SSShieldOffer new];
+    shieldOffer.storefrontId = json[@"storefront_id"];
     NSNumber *orderValue = json[@"order_value"];
-    shieldOffers.orderValue = [NSDecimalNumber decimalNumberWithDecimal:orderValue.decimalValue];
+    shieldOffer.orderValue = [NSDecimalNumber decimalNumberWithDecimal:orderValue.decimalValue];
     NSNumber *shieldFee = json[@"shield_fee"];
-    shieldOffers.shieldFee = [NSDecimalNumber decimalNumberWithDecimal:shieldFee.decimalValue];
+    shieldOffer.shieldFee = [NSDecimalNumber decimalNumberWithDecimal:shieldFee.decimalValue];
     NSString *offeredAt = json[@"offered_at"];
-    shieldOffers.offeredAt = [NSDate dateFromString:offeredAt];
-    return shieldOffers;
+    shieldOffer.offeredAt = [NSDate dateFromString:offeredAt];
+    return shieldOffer;
 }
 
 @end
 
 @interface SSShieldResponse ()
 
-@property (nonatomic, strong, readwrite) SSShieldOffers *shieldOffers;
+@property (nonatomic, strong, readwrite) SSShieldOffer *shieldOffer;
 
 @end
 
@@ -38,7 +38,7 @@
     NSError *error = nil;
     id responseObject = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
     SSShieldResponse *response = [SSShieldResponse new];
-    response.shieldOffers = [SSShieldOffers decodeFromJSON:responseObject];
+    response.shieldOffer = [SSShieldOffer decodeFromJSON:responseObject];
     return response;
 }
 

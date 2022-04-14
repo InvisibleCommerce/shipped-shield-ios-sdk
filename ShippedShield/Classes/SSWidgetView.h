@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class SSWidgetView;
 @protocol SSWidgetViewDelegate <NSObject>
 
-- (void)shieldView:(SSWidgetView *)shieldView onChange:(NSDictionary *)values;
+- (void)widgetView:(SSWidgetView *)widgetView onChange:(NSDictionary *)values;
 
 @end
 

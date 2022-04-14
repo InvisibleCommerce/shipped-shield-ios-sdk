@@ -144,8 +144,8 @@
 
 - (void)triggerShieldChange
 {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(shieldView:onChange:)]) {
-        [self.delegate shieldView:self onChange:@{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(widgetView:onChange:)]) {
+        [self.delegate widgetView:self onChange:@{
             @"isShieldEnabled": @(_shieldSwitch.isOn),
             @"shieldFee": _shieldFee
         }];

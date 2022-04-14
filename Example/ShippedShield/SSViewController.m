@@ -12,7 +12,7 @@
 @interface SSViewController () <SSWidgetViewDelegate, UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
-@property (weak, nonatomic) IBOutlet SSWidgetView *shieldView;
+@property (weak, nonatomic) IBOutlet SSWidgetView *widgetView;
 
 @end
 
@@ -21,13 +21,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _shieldView.delegate = self;
+    _widgetView.delegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [_shieldView updateOrderValue:[[NSDecimalNumber alloc] initWithString:_textField.text]];
+    [_widgetView updateOrderValue:[[NSDecimalNumber alloc] initWithString:_textField.text]];
 }
 
 - (IBAction)viewDidTap:(id)sender
@@ -37,7 +37,7 @@
 
 #pragma mark - SSWidgetViewDelegate
 
-- (void)shieldView:(SSWidgetView *)shieldView onChange:(NSDictionary *)values
+- (void)widgetView:(SSWidgetView *)widgetView onChange:(NSDictionary *)values
 {
     NSLog(@"Shield widget on change: %@", values);
 }
@@ -58,7 +58,7 @@
         NSDecimalNumber *roundedNumber = [decimalNumber decimalNumberByRoundingAccordingToBehavior:behavior];
         NSLog(@"Request shield fee for order value %@", roundedNumber.stringValue);
         textField.text = [NSString stringWithFormat:@"%.2f", roundedNumber.doubleValue];
-        [_shieldView updateOrderValue:roundedNumber];
+        [_widgetView updateOrderValue:roundedNumber];
     } else {
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Invalid amount" message:@"Please input a valid amount for order value." preferredStyle:UIAlertControllerStyleAlert];
         [self presentViewController:alert animated:YES completion:nil];

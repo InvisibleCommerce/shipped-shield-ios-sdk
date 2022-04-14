@@ -99,8 +99,8 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="shieldView" destination="Fs7-Db-GWE" id="RQ9-UE-ONv"/>
                         <outlet property="textField" destination="IxI-hk-ENr" id="YHw-4A-Guv"/>
+                        <outlet property="widgetView" destination="Fs7-Db-GWE" id="oax-no-lRI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>

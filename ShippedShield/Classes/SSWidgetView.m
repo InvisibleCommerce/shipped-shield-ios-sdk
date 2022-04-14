@@ -7,10 +7,8 @@
 
 #import "SSWidgetView.h"
 #import "SSUtils.h"
+#import "ShippedShield+API.h"
 #import "SSLearnMoreViewController.h"
-#import "SSNetworking.h"
-#import "SSShieldRequest.h"
-#import "SSShieldResponse.h"
 
 @interface SSWidgetView ()
 
@@ -128,21 +126,19 @@
 
 - (void)updateOrderValue:(NSDecimalNumber *)orderValue
 {
-    SSShieldRequest *request = [SSShieldRequest new];
-    request.orderValue = orderValue;
     __weak __typeof(self)weakSelf = self;
-    [[SSAPIClient sharedClient] send:request handler:^(SSResponse * _Nullable response, NSError * _Nullable error) {
+    [ShippedShield getShieldFee:orderValue completion:^(SSShieldOffers * _Nullable offers, NSError * _Nullable error) {
         __strong __typeof(weakSelf)strongSelf = weakSelf;
-        if (!error && response && [response isKindOfClass:[SSShieldResponse class]]) {
-            SSShieldResponse *shieldResponse = (SSShieldResponse *)response;
-            strongSelf.feeLabel.text = [NSString stringWithFormat:@"$%@", shieldResponse.shieldOffers.shieldFee.stringValue];
-            strongSelf.shieldFee = shieldResponse.shieldOffers.shieldFee;
-            [strongSelf triggerShieldChange];
-        } else {
+        if (error) {
             strongSelf.feeLabel.text = NSLocalizedString(@"N/A", nil);
             strongSelf.shieldFee = NSDecimalNumber.zero;
             NSLog(@"Failed to update shield fee with order value %@", orderValue);
+            return;
         }
+        
+        strongSelf.feeLabel.text = [NSString stringWithFormat:@"$%@", offers.shieldFee.stringValue];
+        strongSelf.shieldFee = offers.shieldFee;
+        [strongSelf triggerShieldChange];
     }];
 }
 

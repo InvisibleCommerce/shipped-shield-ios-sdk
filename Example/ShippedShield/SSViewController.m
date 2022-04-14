@@ -39,8 +39,7 @@
 
 - (void)shieldView:(SSWidgetView *)shieldView onChange:(NSDictionary *)values
 {
-    NSLog(@"isShieldEnabled: %@", [values[@"isShieldEnabled"] boolValue] ? @"YES" : @"NO");
-    NSLog(@"shieldFee: %@", [values[@"shieldFee"] stringValue]);
+    NSLog(@"Shield widget on change: %@", values);
 }
 
 #pragma mark - UITextFieldDelegate
@@ -74,6 +73,18 @@
     nav.preferredContentSize = CGSizeMake(650, 600);
     
     [self presentViewController:nav animated:YES completion:nil];
+}
+
+- (IBAction)sendShieldFeeRequest:(id)sender
+{
+    [ShippedShield getShieldFee:[[NSDecimalNumber alloc] initWithString:_textField.text] completion:^(SSShieldOffers * _Nullable offers, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"%@", error.localizedDescription);
+            return;
+        }
+        
+        NSLog(@"Get shield fee: %@", offers.shieldFee.stringValue);
+    }];
 }
 
 @end

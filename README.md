@@ -40,7 +40,7 @@ Run the following command
 pod install
 ```
 Don’t forget to use the `.xcworkspace` file to open your project in Xcode, instead of the `.xcodeproj` file, from here on out.
-In the feature, to update to the latest version of the SDK, just run:
+In the future, to update to the latest version of the SDK, just run:
 ```ruby
 pod update ShippedShield
 ```
@@ -83,7 +83,7 @@ If you want to test on different endpoint, you can customize mode. The default i
 [ShippedShield setMode:ShippedShieldProductionMode];
 ```
 
-### Create a shield widget view
+### Create a Shield Widget view
 
 You can initialize it with a default value, then put it where you want, and it will request shipped fee automatically.
 
@@ -94,6 +94,12 @@ widgetView.delegate = self;
 ```
 
 Or you can use it in storyboards.
+
+Whenever the cart value changes, update the widget view with the latest order value.
+
+```objective-c
+[widgetView updateOrderValue:orderValueRoundedNumber];
+```
 
 To get the callback from widget, you need implement the `SSWidgetViewDelegate` delegate.
 
@@ -117,7 +123,7 @@ Shield widget on change: {
 
 If you plan to implement the widget yourself to fit the app style, you can still use the functionality provided by the SDK.
 
-- Send the shipped fee request
+- Send the Shield Fee request
 
 ```objective-c
 [ShippedShield getShieldFee:[[NSDecimalNumber alloc] initWithString:_textField.text] completion:^(SSShieldOffer * _Nullable offer, NSError * _Nullable error) {

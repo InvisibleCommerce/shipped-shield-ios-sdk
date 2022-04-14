@@ -88,7 +88,8 @@ If you want to test on different endpoint, you can customize mode.
 You can initialize it with a default value, then put it where you want, and it will request shipped fee automatically.
 
 ```objective-c
-SSWidgetView *widgetView = [[SSWidgetView alloc] initWithIsDisabledByDefault:NO];
+SSWidgetView *widgetView = [[SSWidgetView alloc] initWithFrame:CGRectMake(x, y, width, height)];
+widgetView.isDisabled = NO;
 widgetView.delegate = self;
 ```
 

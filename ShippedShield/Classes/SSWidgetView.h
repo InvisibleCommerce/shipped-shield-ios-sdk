@@ -16,11 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+IB_DESIGNABLE
 @interface SSWidgetView : UIView
 
 @property (weak, nonatomic) id <SSWidgetViewDelegate> delegate;
-
-- (instancetype)initWithIsDisabledByDefault:(BOOL)isDisabledByDefault;
+@property (nonatomic) IBInspectable BOOL isDisabled;
 
 - (void)updateOrderValue:(NSDecimalNumber *)orderValue;
 

@@ -54,3 +54,13 @@
 }
 
 @end
+
+@implementation UIWindow (Utils)
+
++ (UIEdgeInsets)safeAreaInsets
+{
+    UIWindow *window = UIApplication.sharedApplication.windows.firstObject;
+    return window.safeAreaInsets;
+}
+
+@end

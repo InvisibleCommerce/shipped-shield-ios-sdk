@@ -173,6 +173,8 @@ static NSString *_publicKey = nil;
     }
     if (_publicKey) {
         [urlRequest setValue:[NSString stringWithFormat:@"Bearer %@", _publicKey] forHTTPHeaderField:@"Authorization"];
+    } else {
+        NSLog(@"You must configure the SDK instance with a 'publicKey' property");
     }
     if (request.parameters && [NSJSONSerialization isValidJSONObject:request.parameters] && request.method == SSHTTPMethodPOST) {
         urlRequest.HTTPBody = [NSJSONSerialization dataWithJSONObject:request.parameters options:NSJSONWritingPrettyPrinted error:nil];

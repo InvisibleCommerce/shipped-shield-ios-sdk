@@ -22,10 +22,19 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    UIScrollView *scrollView = [UIScrollView new];
+    scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    scrollView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:scrollView];
+    
+    UIView *contentView = [UIView new];
+    contentView.translatesAutoresizingMaskIntoConstraints = NO;
+    [scrollView addSubview:contentView];
+    
     UIView *headerView = [self headerView];
     headerView.backgroundColor = [UIColor colorWithHex:0x000000];
     headerView.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:headerView];
+    [contentView addSubview:headerView];
     
     UILabel *titleLabel = [UILabel new];
     titleLabel.text = NSLocalizedString(@"Shipped Shield Premium Package Assurance", nil);
@@ -34,7 +43,7 @@
     titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.numberOfLines = 0;
     titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:titleLabel];
+    [contentView addSubview:titleLabel];
     
     UILabel *subtitleLabel = [UILabel new];
     subtitleLabel.text = NSLocalizedString(@"Have peace of mind and instantly resolve unexpected issues hassle-free.", nil);
@@ -43,30 +52,44 @@
     subtitleLabel.textAlignment = NSTextAlignmentCenter;
     subtitleLabel.numberOfLines = 0;
     subtitleLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:subtitleLabel];
+    [contentView addSubview:subtitleLabel];
     
     UIView *tipsView = [self tipsView];
     tipsView.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:tipsView];
+    [contentView addSubview:tipsView];
     
     UIView *actionView = [self actionView];
     actionView.backgroundColor = [UIColor colorWithHex:0x13747480];
     actionView.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:actionView];
+    [contentView addSubview:actionView];
     
-    NSDictionary *views = NSDictionaryOfVariableBindings(headerView, titleLabel, subtitleLabel, tipsView, actionView);
+    NSDictionary *views = NSDictionaryOfVariableBindings(scrollView, contentView, headerView, titleLabel, subtitleLabel, tipsView, actionView);
     
     NSDictionary *metrics = @{@"topPadding": UIDevice.isIpad ? @56: @50,
                               @"margin": @16,
                               @"vSpace": @24,
-                              @"vSectionSpace": @40};
+                              @"vSectionSpace": @32};
     
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[headerView]|" options:0 metrics:metrics views:views]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-topPadding-[headerView(88)]-vSpace-[titleLabel]" options:0 metrics:metrics views:views]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-margin-[titleLabel]-margin-|" options:0 metrics:metrics views:views]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[titleLabel]-vSpace-[subtitleLabel]-vSectionSpace-[tipsView]" options:NSLayoutFormatAlignAllLeft | NSLayoutFormatAlignAllRight metrics:metrics views:views]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[actionView]|" options:0 metrics:metrics views:views]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[tipsView]-vSectionSpace-[actionView]|" options:0 metrics:metrics views:views]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[scrollView]|" options:0 metrics:metrics views:views]];
+    [scrollView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor].active = YES;
+    [scrollView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
+    
+    [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[contentView(scrollView)]|" options:0 metrics:metrics views:views]];
+    [scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[contentView]|" options:0 metrics:metrics views:views]];
+    
+    NSLayoutConstraint *heightConstraint = [contentView.heightAnchor constraintEqualToAnchor:scrollView.heightAnchor];
+    heightConstraint.priority = UILayoutPriorityDefaultLow;
+    heightConstraint.active = YES;
+    
+    [tipsView.widthAnchor constraintEqualToAnchor:contentView.widthAnchor multiplier:311.0 / 375.0].active = YES;
+    [tipsView.centerXAnchor constraintEqualToAnchor:contentView.centerXAnchor].active = YES;
+
+    [contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[headerView]|" options:0 metrics:metrics views:views]];
+    [contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[headerView(88)]-vSpace-[titleLabel]" options:0 metrics:metrics views:views]];
+    [contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-margin-[titleLabel]-margin-|" options:0 metrics:metrics views:views]];
+    [contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[titleLabel]-vSpace-[subtitleLabel]" options:NSLayoutFormatAlignAllLeft | NSLayoutFormatAlignAllRight metrics:metrics views:views]];
+    [contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[actionView]|" options:0 metrics:metrics views:views]];
+    [contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[subtitleLabel]-vSectionSpace-[tipsView]->=vSectionSpace-[actionView]|" options:0 metrics:metrics views:views]];
 }
 
 - (UIView *)headerView
@@ -107,11 +130,13 @@
     
     NSDictionary *views = NSDictionaryOfVariableBindings(protectedImageView, titleLabel);
     
-    NSDictionary *metrics = @{@"imageSize": @32,
+    CGFloat imageSize = 32.0;
+    NSDictionary *metrics = @{@"imageSize": @(imageSize),
                               @"hSpace": @12};
     
     [contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[protectedImageView(imageSize)]-hSpace-[titleLabel]|" options:NSLayoutFormatAlignAllCenterY metrics:metrics views:views]];
-    [contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[protectedImageView(imageSize)]" options:NSLayoutFormatAlignAllCenterY metrics:metrics views:views]];
+    [protectedImageView.heightAnchor constraintEqualToConstant:imageSize].active = YES;
+    [protectedImageView.centerYAnchor constraintEqualToAnchor:contentView.centerYAnchor].active = YES;
     
     return contentView;
 }
@@ -134,11 +159,10 @@
     
     NSDictionary *views = NSDictionaryOfVariableBindings(protectedFirstTipView, protectedSecondTipView, protectedThirdTipView);
     
-    NSDictionary *metrics = @{@"leftPadding": UIDevice.isIpad ? @122 : @8,
-                              @"vSpace": @24,
+    NSDictionary *metrics = @{@"vSpace": @24,
                               @"tipHeight": @40};
     
-    [tipsView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-leftPadding-[protectedFirstTipView]-leftPadding-|" options:0 metrics:metrics views:views]];
+    [tipsView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[protectedFirstTipView]|" options:0 metrics:metrics views:views]];
     [tipsView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[protectedFirstTipView(tipHeight)]-vSpace-[protectedSecondTipView(tipHeight)]-vSpace-[protectedThirdTipView(tipHeight)]|" options:NSLayoutFormatAlignAllLeft | NSLayoutFormatAlignAllRight metrics:metrics views:views]];
     
     return tipsView;
@@ -176,15 +200,16 @@
     
     NSDictionary *metrics = @{@"hSpace": UIDevice.isIpad ? @120 : @24,
                               @"vSpace": @24,
-                              @"leftPadding": UIDevice.isIpad ? @86 : @0
+                              @"leftPadding": UIDevice.isIpad ? @86 : @0,
+                              @"bottomPadding": @(24 + (UIDevice.isIpad ? 0 : UIWindow.safeAreaInsets.bottom))
     };
     
     [actionView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-hSpace-[containerView]-hSpace-|" options:0 metrics:metrics views:views]];
-    [actionView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpace-[containerView]-vSpace-|" options:0 metrics:metrics views:views]];
+    [actionView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-vSpace-[containerView]-bottomPadding-|" options:0 metrics:metrics views:views]];
     
     [containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[descLabel]|" options:0 metrics:metrics views:views]];
     [containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-leftPadding-[closeButton]-leftPadding-|" options:0 metrics:metrics views:views]];
-    [containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[descLabel]-vSpace-[closeButton(50)]->=0-|" options:0 metrics:metrics views:views]];
+    [containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[descLabel]-vSpace-[closeButton(50)]|" options:0 metrics:metrics views:views]];
     
     return actionView;
 }
@@ -192,6 +217,11 @@
 - (void)dismiss
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection
+{
+    [super traitCollectionDidChange:previousTraitCollection];
 }
 
 @end

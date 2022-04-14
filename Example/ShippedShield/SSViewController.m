@@ -39,7 +39,8 @@
 
 - (void)shieldView:(SSWidgetView *)shieldView onChange:(NSDictionary *)values
 {
-    NSLog(@"%@", values);
+    NSLog(@"isShieldEnabled: %@", [values[@"isShieldEnabled"] boolValue] ? @"YES" : @"NO");
+    NSLog(@"shieldFee: %@", [values[@"shieldFee"] stringValue]);
 }
 
 #pragma mark - UITextFieldDelegate

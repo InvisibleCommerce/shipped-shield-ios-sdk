@@ -34,4 +34,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface UIWindow (Utils)
+
++ (UIEdgeInsets)safeAreaInsets;
+
+@end
+
 NS_ASSUME_NONNULL_END

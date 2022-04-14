@@ -119,6 +119,8 @@ Shield widget on change: {
 }
 ```
 
+Within the callback, implement any logic necessary to add or remove Shield from the cart, based on whether `isShieldEnabled` is true or false. 
+
 ### Customization
 
 If you plan to implement the widget yourself to fit the app style, you can still use the functionality provided by the SDK.

@@ -95,10 +95,10 @@ widgetView.delegate = self;
 
 Or you can use it in storyboards.
 
-Whenever the cart value changes, update the widget view with the latest order value.
+Whenever the cart value changes, update the widget view with the latest cart value. This value should be the sum of the value of the order items, prior to discounts, shipping, taxes, etc. 
 
 ```objective-c
-[widgetView updateOrderValue:orderValueRoundedNumber];
+[widgetView updateOrderValue:cartValueRoundedNumber];
 ```
 
 To get the callback from widget, you need implement the `SSWidgetViewDelegate` delegate.

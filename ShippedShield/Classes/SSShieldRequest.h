@@ -9,9 +9,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ `SSShieldRequest` includes the request of getting shield fee.
+ */
 @interface SSShieldRequest : SSRequest
 
-@property (nonatomic, copy, nullable) NSDecimalNumber *orderValue;
+/**
+ An order value.
+ */
+@property (nonatomic, copy) NSDecimalNumber *orderValue;
 
 @end
 

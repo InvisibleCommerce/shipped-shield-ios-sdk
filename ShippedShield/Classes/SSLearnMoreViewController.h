@@ -9,6 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ `SSLearnMoreViewController` is a view controller to show the learn more page.
+ */
 @interface SSLearnMoreViewController : UIViewController
 
 @end

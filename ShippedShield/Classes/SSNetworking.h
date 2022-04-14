@@ -54,14 +54,14 @@ typedef NS_ENUM(NSInteger, ShippedShieldMode) {
 
 @end
 
-/**
- Http request
- */
 typedef NS_ENUM(NSInteger, SSHTTPMethod) {
     SSHTTPMethodGET,
     SSHTTPMethodPOST
 };
 
+/**
+ Http request
+ */
 @interface SSRequest : NSObject
 
 - (NSString *)path;
@@ -73,6 +73,9 @@ typedef NS_ENUM(NSInteger, SSHTTPMethod) {
 
 @end
 
+/**
+ Http response
+ */
 @interface SSResponse : NSObject
 
 + (SSResponse *)parse:(NSData *)data;

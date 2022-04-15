@@ -155,8 +155,13 @@
         nav.preferredContentSize = CGSizeMake(650, 600);
     }
     
-    UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
-    [rootViewController presentViewController:nav animated:YES completion:nil];
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    if (window) {
+        UIViewController *rootViewController = window.rootViewController;
+        [rootViewController presentViewController:nav animated:YES completion:nil];
+    } else {
+        NSLog(@"Can't find the rootViewController.");
+    }
 }
 
 @end

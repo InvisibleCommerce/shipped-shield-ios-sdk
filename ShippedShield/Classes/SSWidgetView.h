@@ -34,7 +34,7 @@ IB_DESIGNABLE
 /**
  A delegate which handles the widget callback.
  */
-@property (weak, nonatomic) id <SSWidgetViewDelegate> delegate;
+@property (weak, nonatomic) IBOutlet id <SSWidgetViewDelegate> delegate;
 
 /**
  This method is called to get the latest shield fee.

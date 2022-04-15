@@ -35,14 +35,11 @@
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fs7-Db-GWE" customClass="SSWidgetView">
-                                <rect key="frame" x="16" y="77" width="343" height="42"/>
+                                <rect key="frame" x="16" y="77" width="343" height="31"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="kcR-y5-L1U"/>
-                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dal-4u-06L">
-                                <rect key="frame" x="16" y="135" width="343" height="50"/>
+                                <rect key="frame" x="16" y="124" width="343" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="HFI-Rm-7Qr"/>
                                 </constraints>
@@ -59,7 +56,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ora-a9-H8Q">
-                                <rect key="frame" x="16" y="201" width="343" height="50"/>
+                                <rect key="frame" x="16" y="190" width="343" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Dft-9d-GXX"/>
                                 </constraints>

@@ -96,15 +96,14 @@
                             @"feeLabel": _feeLabel,
                             @"descLabel": _descLabel};
     
-    NSDictionary *metrics = @{@"margin": @16,
+    NSDictionary *metrics = @{@"margin": @12,
                               @"hSpace": @8,
-                              @"vSpace": @4};
+                              @"vSpace": @2};
     
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[shieldSwitch]-margin-[containerView]|" options:NSLayoutFormatAlignAllTop metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[shieldSwitch]->=0-|" options:0 metrics:metrics views:views]];
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[containerView]->=0-|" options:0 metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[shieldSwitch]-margin-[containerView]|" options:NSLayoutFormatAlignAllCenterY metrics:metrics views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[containerView]|" options:0 metrics:metrics views:views]];
     
-    [_containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[titleLabel]-hSpace-[learnMoreButton]->=0-[feeLabel]|" options:NSLayoutFormatAlignAllTop | NSLayoutFormatAlignAllBottom metrics:metrics views:views]];
+    [_containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[titleLabel]-hSpace-[learnMoreButton]->=hSpace-[feeLabel]|" options:NSLayoutFormatAlignAllTop | NSLayoutFormatAlignAllCenterY metrics:metrics views:views]];
     [_containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[titleLabel]-vSpace-[descLabel]|" options:NSLayoutFormatAlignAllLeft metrics:metrics views:views]];
     [_containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[feeLabel]-vSpace-[descLabel]|" options:NSLayoutFormatAlignAllRight metrics:metrics views:views]];
 }

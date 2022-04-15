@@ -83,7 +83,7 @@
     
     [tipsView.widthAnchor constraintEqualToAnchor:contentView.widthAnchor multiplier:311.0 / 375.0].active = YES;
     [tipsView.centerXAnchor constraintEqualToAnchor:contentView.centerXAnchor].active = YES;
-
+    
     [contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[headerView]|" options:0 metrics:metrics views:views]];
     [contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[headerView(88)]-vSpace-[titleLabel]" options:0 metrics:metrics views:views]];
     [contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-margin-[titleLabel]-margin-|" options:0 metrics:metrics views:views]];

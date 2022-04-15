@@ -108,16 +108,6 @@
     [_containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[feeLabel]-vSpace-[descLabel]|" options:NSLayoutFormatAlignAllRight metrics:metrics views:views]];
 }
 
-- (BOOL)isShieldEnabled
-{
-    return _shieldSwitch.isOn;
-}
-
-- (void)setIsShieldEnabled:(BOOL)isShieldEnabled
-{
-    _shieldSwitch.on = isShieldEnabled;
-}
-
 - (void)shieldStateChanged:(id)sender
 {
     [self triggerShieldChange];

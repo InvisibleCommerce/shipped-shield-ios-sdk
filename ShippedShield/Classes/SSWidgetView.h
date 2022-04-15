@@ -32,11 +32,6 @@ IB_DESIGNABLE
 @interface SSWidgetView : UIView
 
 /**
- Whether to accept the shield fee.
- */
-@property (nonatomic) IBInspectable BOOL isShieldEnabled;
-
-/**
  A delegate which handles the widget callback.
  */
 @property (weak, nonatomic) id <SSWidgetViewDelegate> delegate;

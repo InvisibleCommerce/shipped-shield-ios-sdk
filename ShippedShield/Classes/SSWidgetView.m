@@ -112,7 +112,7 @@
 
 - (void)shieldStateChanged:(id)sender
 {
-    [self triggerShieldChange];
+    [self triggerShieldChangeWithError:nil];
 }
 
 - (void)updateOrderValue:(NSDecimalNumber *)orderValue
@@ -122,23 +122,25 @@
         __strong __typeof(weakSelf)strongSelf = weakSelf;
         if (error) {
             strongSelf.feeLabel.text = NSLocalizedString(@"N/A", nil);
-            strongSelf.shieldFee = NSDecimalNumber.zero;
-            NSLog(@"Failed to update shield fee with order value %@", orderValue);
+            strongSelf.shieldFee = nil;
+            [strongSelf triggerShieldChangeWithError:error];
             return;
         }
         
         strongSelf.feeLabel.text = [NSString stringWithFormat:@"$%@", offer.shieldFee.stringValue];
         strongSelf.shieldFee = offer.shieldFee;
-        [strongSelf triggerShieldChange];
+        [strongSelf triggerShieldChangeWithError:nil];
     }];
 }
 
-- (void)triggerShieldChange
+- (void)triggerShieldChangeWithError:(nullable NSError *)error
 {
     if (self.delegate && [self.delegate respondsToSelector:@selector(widgetView:onChange:)]) {
         NSMutableDictionary *values = [NSMutableDictionary dictionaryWithObject:@(_shieldSwitch.isOn) forKey:@"isShieldEnabled"];
         if (_shieldFee) {
             values[@"shieldFee"] = _shieldFee;
+        } else if (error) {
+            values[@"error"] = error;
         }
         [self.delegate widgetView:self onChange:values];
     }

@@ -76,10 +76,12 @@ typedef NS_ENUM(NSInteger, SSHTTPMethod) {
 /**
  Http response
  */
+@class SSErrorResponse;
 @interface SSResponse : NSObject
 
 + (SSResponse *)parse:(NSData *)data;
-+ (nullable SSResponse *)parseError:(NSData *)data;
++ (nullable SSErrorResponse *)parseError:(NSData *)data
+                                    code:(NSInteger)code;
 
 @end
 
@@ -96,7 +98,7 @@ typedef NS_ENUM(NSInteger, SSHTTPMethod) {
 /**
  Error code.
  */
-@property (nonatomic, copy, readonly) NSString *code;
+@property (nonatomic, readonly) NSInteger code;
 
 /**
  Error object.
@@ -111,7 +113,7 @@ typedef NS_ENUM(NSInteger, SSHTTPMethod) {
  @return The initialized error object.
  */
 - (instancetype)initWithMessage:(NSString *)message
-                           code:(NSString *)code;
+                           code:(NSInteger)code;
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
 

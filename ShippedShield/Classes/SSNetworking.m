@@ -109,15 +109,15 @@ static NSString *_publicKey = nil;
     return nil;
 }
 
-+ (nullable SSResponse *)parseError:(NSData *)data
++ (nullable SSErrorResponse *)parseError:(NSData *)data
+                                    code:(NSInteger)code
 {
     NSError *error = nil;
     id json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
     if (json == nil) {
         return nil;
     }
-    NSString *message = json[@"message"];
-    NSString *code = json[@"code"];
+    NSString *message = json[@"error"];
     return [[SSErrorResponse alloc] initWithMessage:message code:code];
 }
 
@@ -125,19 +125,20 @@ static NSString *_publicKey = nil;
 
 @implementation SSErrorResponse
 
-- (instancetype)initWithMessage:(NSString *)message
-                           code:(NSString *)code
+- (instancetype)initWithMessage:(NSString *)message code:(NSInteger)code
 {
     if (self = [super init]) {
         _message = [message copy];
-        _code = [code copy];
+        _code = code;
     }
     return self;
 }
 
 - (NSError *)error
 {
-    return [NSError errorWithDomain:SSSDKErrorDomain code:-1 userInfo:@{NSLocalizedDescriptionKey: self.message, NSLocalizedFailureReasonErrorKey: self.code}];
+    return [NSError errorWithDomain:SSSDKErrorDomain
+                               code:self.code
+                           userInfo:@{NSLocalizedDescriptionKey: self.message}];
 }
 
 @end
@@ -192,11 +193,15 @@ static NSString *_publicKey = nil;
                         id response = [request.responseClass performSelector:@selector(parse:) withObject:data];
                         handler(response, error);
                     } else {
-                        SSErrorResponse *errorResponse = [request.responseClass performSelector:@selector(parseError:) withObject:data];
+                        SSErrorResponse *errorResponse = [request.responseClass performSelector:@selector(parseError:code:)
+                                                                                     withObject:data
+                                                                                     withObject:@(result.statusCode)];
                         if (errorResponse) {
                             handler(nil, errorResponse.error);
                         } else {
-                            handler(nil, [NSError errorWithDomain:SSSDKErrorDomain code:result.statusCode userInfo:@{NSLocalizedDescriptionKey: NSLocalizedString(@"Couldn't parse response.", nil)}]);
+                            handler(nil, [NSError errorWithDomain:SSSDKErrorDomain
+                                                             code:result.statusCode
+                                                         userInfo:@{NSLocalizedDescriptionKey: NSLocalizedString(@"Couldn't parse response.", nil)}]);
                         }
                     }
                 });

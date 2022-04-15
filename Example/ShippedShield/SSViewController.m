@@ -83,7 +83,7 @@
 {
     [ShippedShield getShieldFee:[[NSDecimalNumber alloc] initWithString:_textField.text] completion:^(SSShieldOffer * _Nullable offer, NSError * _Nullable error) {
         if (error) {
-            NSLog(@"%@", error.localizedDescription);
+            NSLog(@"Failed to get shield fee: %@", error.localizedDescription);
             return;
         }
         

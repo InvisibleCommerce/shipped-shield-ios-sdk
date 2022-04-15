@@ -145,13 +145,13 @@ typedef void (^SSRequestHandler)(SSResponse * _Nullable response, NSError * _Nul
 
 @end
 
-@protocol AWXJSONDecodable <NSObject>
+@protocol SSJSONDecodable <NSObject>
 
 + (id)decodeFromJSON:(NSDictionary *)json;
 
 @end
 
-@protocol AWXJSONEncodable <NSObject>
+@protocol SSJSONEncodable <NSObject>
 
 - (NSDictionary *)encodeToJSON;
 

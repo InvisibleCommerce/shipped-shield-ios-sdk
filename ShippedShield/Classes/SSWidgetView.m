@@ -24,17 +24,6 @@
 
 @implementation SSWidgetView
 
-- (instancetype)initWithIsDisabledByDefault:(BOOL)isDisabledByDefault
-{
-    self = [super initWithFrame:CGRectZero];
-    if (self) {
-        [self loadViews];
-        [self loadLayoutConstraints];
-        _shieldSwitch.on = !isDisabledByDefault;
-    }
-    return self;
-}
-
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -57,6 +46,7 @@
 - (void)loadViews
 {
     _shieldSwitch = [UISwitch new];
+    _shieldSwitch.on = YES;
     [_shieldSwitch addTarget:self action:@selector(shieldStateChanged:) forControlEvents:UIControlEventValueChanged];
     _shieldSwitch.translatesAutoresizingMaskIntoConstraints = NO;
     [self addSubview:_shieldSwitch];
@@ -119,14 +109,14 @@
     [_containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[feeLabel]-vSpace-[descLabel]|" options:NSLayoutFormatAlignAllRight metrics:metrics views:views]];
 }
 
-- (BOOL)isDisabled
+- (BOOL)isShieldEnabled
 {
-    return !_shieldSwitch.isOn;
+    return _shieldSwitch.isOn;
 }
 
-- (void)setIsDisabled:(BOOL)isDisabled
+- (void)setIsShieldEnabled:(BOOL)isShieldEnabled
 {
-    _shieldSwitch.on = !isDisabled;
+    _shieldSwitch.on = isShieldEnabled;
 }
 
 - (void)shieldStateChanged:(id)sender

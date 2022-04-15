@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  `SSShieldOffer` includes the details of shield fee.
  */
-@interface SSShieldOffer : NSObject <AWXJSONDecodable>
+@interface SSShieldOffer : NSObject <SSJSONDecodable>
 
 /**
  Storefront id.

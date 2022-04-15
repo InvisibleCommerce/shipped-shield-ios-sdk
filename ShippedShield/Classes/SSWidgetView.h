@@ -34,7 +34,7 @@ IB_DESIGNABLE
 /**
  Whether to accept the shield fee.
  */
-@property (nonatomic) IBInspectable BOOL isDisabled;
+@property (nonatomic) IBInspectable BOOL isShieldEnabled;
 
 /**
  A delegate which handles the widget callback.

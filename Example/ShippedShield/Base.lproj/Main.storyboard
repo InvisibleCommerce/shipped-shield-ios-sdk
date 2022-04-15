@@ -41,7 +41,7 @@
                                     <constraint firstAttribute="height" constant="42" id="kcR-y5-L1U"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isDisabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isShieldEnabled" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dal-4u-06L">

@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - ShippedShield (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - ShippedShield (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  ShippedShield:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  ShippedShield: 30d306960c9d73ad34e172d73fbc2c98ac5350b4
+
+PODFILE CHECKSUM: 65763c58f8950af7ced6aaba01fa054e888445f4
+
+COCOAPODS: 1.11.3

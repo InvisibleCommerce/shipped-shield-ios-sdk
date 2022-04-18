@@ -1,0 +1,6 @@
+framework module ShippedShield {
+  umbrella header "ShippedShield-umbrella.h"
+
+  export *
+  module * { export * }
+}

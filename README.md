@@ -4,9 +4,7 @@
  [![License](https://img.shields.io/cocoapods/l/ShippedShield.svg?style=flat)](https://cocoapods.org/pods/ShippedShield)
  [![Platform](https://img.shields.io/cocoapods/p/ShippedShield.svg?style=flat)](https://cocoapods.org/pods/ShippedShield)
  [![CocoaPods compatible](https://img.shields.io/badge/CocoaPods-compatible-green.svg?style=flat)](https://cocoapods.org)
-<!---
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg?style=flat)](https://github.com/Carthage/Carthage)
--->
+ [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Shipped Shield offers premium package assurance for shipments that are lost, damaged or stolen. Instantly track and resolve shipment issues hassle-free with the app.
 
@@ -20,9 +18,7 @@ The ShippedShield iOS SDK requires Xcode 13.3.1 or later and is compatible with 
 
 ## Installation
 
-<!---
 The ShippedShield iOS SDK is available through either [CocoaPods](https://cocoapods.org/) or [Carthage](https://github.com/Carthage/Carthage).
--->
 
 ### CocoaPods
 
@@ -45,13 +41,18 @@ In the future, to update to the latest version of the SDK, just run:
 pod update ShippedShield
 ```
 
-<!---
 ### Carthage
 
+If you haven't already, install the latest version of [Carthage](https://github.com/Carthage/Carthage).
+To use it, you need create a `Cartfile` and add this line to your Cartfile:
 ```ogdl
 github "InvisibleCommerce/shipped-shield-ios-sdk"
 ```
--->
+Run the following command
+```ruby
+carthage update --use-xcframeworks
+```
+Drag the built `.xcframework` bundles from `Carthage/Build` into the "Frameworks and Libraries" section of your application’s Xcode project.
 
 <!---
 ### Swift

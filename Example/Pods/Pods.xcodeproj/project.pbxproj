@@ -52,7 +52,7 @@
 		C049CDFC34574C58EAC52817A13C0C24 /* ShippedShield+API.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD3054CA7AAF1CF59BCEABF21C1D2D9 /* ShippedShield+API.m */; };
 		C07CA8EAEF541279F7FE4F5C7490663E /* SSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 99891C34C663C2332FC35F89F18DAC56 /* SSUtils.m */; };
 		C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
-		C7B14154E56F0426691663B739096CA7 /* ShippedShield.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0669AD886BC5E8F508CD621CCA4F271B /* ShippedShield.bundle */; };
+		C7B14154E56F0426691663B739096CA7 /* ShippedShield-ShippedShield in Resources */ = {isa = PBXBuildFile; fileRef = 0669AD886BC5E8F508CD621CCA4F271B /* ShippedShield-ShippedShield */; };
 		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
 		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
 		F43399FA23607F7C27996ED732B7925A /* ShippedShield+API.h in Headers */ = {isa = PBXBuildFile; fileRef = 22884B47D6E8C0A3C7BC1C316593713D /* ShippedShield+API.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -92,7 +92,7 @@
 
 /* Begin PBXFileReference section */
 		0569BE69B483385C5AF512EEF81B3491 /* SSNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSNetworking.m; path = ShippedShield/Classes/SSNetworking.m; sourceTree = "<group>"; };
-		0669AD886BC5E8F508CD621CCA4F271B /* ShippedShield.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShippedShield.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0669AD886BC5E8F508CD621CCA4F271B /* ShippedShield-ShippedShield */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ShippedShield-ShippedShield"; path = ShippedShield.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		07697EA63F89BBEEC017E3F62C901033 /* ShippedShield-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ShippedShield-Info.plist"; sourceTree = "<group>"; };
 		0D80DFF63B426A45C73AE9E5511A7D7F /* ResourceBundle-ShippedShield-ShippedShield-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ShippedShield-ShippedShield-Info.plist"; sourceTree = "<group>"; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
@@ -100,12 +100,12 @@
 		172B659DB4BA2A88C0A1C990159E3B7D /* Pods-ShippedShield_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShippedShield_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		19E26CF78CE645471AC44D0C44915F0F /* SSNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSNetworking.h; path = ShippedShield/Classes/SSNetworking.h; sourceTree = "<group>"; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		1C2D145D7F59013360E13BF3670D86F6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1C2D145D7F59013360E13BF3670D86F6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		21A2A0A1155328C3627DC237EF49269A /* SSLearnMoreViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSLearnMoreViewController.m; path = ShippedShield/Classes/SSLearnMoreViewController.m; sourceTree = "<group>"; };
 		22884B47D6E8C0A3C7BC1C316593713D /* ShippedShield+API.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ShippedShield+API.h"; path = "ShippedShield/Classes/ShippedShield+API.h"; sourceTree = "<group>"; };
 		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
-		237E8097892DC77988BC5D165EBCD3B8 /* Pods_ShippedShield_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShippedShield_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		237E8097892DC77988BC5D165EBCD3B8 /* Pods-ShippedShield_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ShippedShield_Tests"; path = Pods_ShippedShield_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A5702BAD16E36768CA7FC2052F0182 /* Pods-ShippedShield_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShippedShield_Example-Info.plist"; sourceTree = "<group>"; };
 		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
@@ -121,14 +121,14 @@
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		4E0B400DBCBEBD94105DB1F7AC82CFAD /* ShippedShield.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ShippedShield.h; path = ShippedShield/Classes/ShippedShield.h; sourceTree = "<group>"; };
 		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		6E155B4BD699BECA0F7E19D9ACA63121 /* Pods_ShippedShield_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShippedShield_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E155B4BD699BECA0F7E19D9ACA63121 /* Pods-ShippedShield_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ShippedShield_Example"; path = Pods_ShippedShield_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB065160340C03C4B533489C327B84F /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ShippedShield/Assets/Assets.xcassets; sourceTree = "<group>"; };
 		7AB29DBA7D7025694C86F904A918888D /* SSShieldRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSShieldRequest.m; path = ShippedShield/Classes/SSShieldRequest.m; sourceTree = "<group>"; };
 		7CBA70C5A883D58273B61096FCD7CB47 /* SSLearnMoreViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSLearnMoreViewController.h; path = ShippedShield/Classes/SSLearnMoreViewController.h; sourceTree = "<group>"; };
-		7CEE7558F6DB8FC1B891EB1E12E6E538 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7CEE7558F6DB8FC1B891EB1E12E6E538 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		809AEF31E91636BFAD50E34C3D40B909 /* SSShieldRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSShieldRequest.h; path = ShippedShield/Classes/SSShieldRequest.h; sourceTree = "<group>"; };
 		8229AD9A4455E69B16502F85FB3FD5F0 /* SSShieldResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSShieldResponse.h; path = ShippedShield/Classes/SSShieldResponse.h; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 		99891C34C663C2332FC35F89F18DAC56 /* SSUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSUtils.m; path = ShippedShield/Classes/SSUtils.m; sourceTree = "<group>"; };
 		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		9D5B0831A31D0AC9AB5FBC3D2FC6B07A /* Pods-ShippedShield_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShippedShield_Example-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FCA9A68372E312413AC29157384CE7E /* Pods-ShippedShield_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShippedShield_Tests.modulemap"; sourceTree = "<group>"; };
 		A3E29C23074A159AACA0845896D8BF71 /* SSWidgetView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSWidgetView.m; path = ShippedShield/Classes/SSWidgetView.m; sourceTree = "<group>"; };
 		AC3E9CD41F81EE9FDFFA584E1FB68361 /* Pods-ShippedShield_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShippedShield_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 		BAD3054CA7AAF1CF59BCEABF21C1D2D9 /* ShippedShield+API.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ShippedShield+API.m"; path = "ShippedShield/Classes/ShippedShield+API.m"; sourceTree = "<group>"; };
 		C08289DB5B2D93285D1497F6A3778C59 /* Pods-ShippedShield_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShippedShield_Example-dummy.m"; sourceTree = "<group>"; };
 		C0925A05E1BC9DDBD12314CD07015055 /* ShippedShield-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShippedShield-prefix.pch"; sourceTree = "<group>"; };
-		C3DD5D7A386F09F05A9DD51E320B4139 /* ShippedShield.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ShippedShield.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C3DD5D7A386F09F05A9DD51E320B4139 /* ShippedShield.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ShippedShield.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		CC61F38813F55DE23E29C45CC1165FB8 /* Pods-ShippedShield_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShippedShield_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		CD09200FDA688121E71DC9C8DE0C2178 /* Pods-ShippedShield_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShippedShield_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		EE969EE40E304B827786EE731313F7E5 /* Pods-ShippedShield_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShippedShield_Tests-dummy.m"; sourceTree = "<group>"; };
 		F2C3FA91966630EDF5FF5B5B7DD30A09 /* SSWidgetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSWidgetView.h; path = ShippedShield/Classes/SSWidgetView.h; sourceTree = "<group>"; };
-		F568323D3A8D78DB0C0DAFA7ADE7B575 /* ShippedShield.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShippedShield.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F568323D3A8D78DB0C0DAFA7ADE7B575 /* ShippedShield */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ShippedShield; path = ShippedShield.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -357,6 +357,7 @@
 				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
 				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
 			);
+			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -375,11 +376,11 @@
 		D02B351F53EC4A45BB4C7E70ACD77D42 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */,
-				6E155B4BD699BECA0F7E19D9ACA63121 /* Pods_ShippedShield_Example.framework */,
-				237E8097892DC77988BC5D165EBCD3B8 /* Pods_ShippedShield_Tests.framework */,
-				F568323D3A8D78DB0C0DAFA7ADE7B575 /* ShippedShield.framework */,
-				0669AD886BC5E8F508CD621CCA4F271B /* ShippedShield.bundle */,
+				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */,
+				6E155B4BD699BECA0F7E19D9ACA63121 /* Pods-ShippedShield_Example */,
+				237E8097892DC77988BC5D165EBCD3B8 /* Pods-ShippedShield_Tests */,
+				F568323D3A8D78DB0C0DAFA7ADE7B575 /* ShippedShield */,
+				0669AD886BC5E8F508CD621CCA4F271B /* ShippedShield-ShippedShield */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -499,7 +500,7 @@
 			);
 			name = ShippedShield;
 			productName = ShippedShield;
-			productReference = F568323D3A8D78DB0C0DAFA7ADE7B575 /* ShippedShield.framework */;
+			productReference = F568323D3A8D78DB0C0DAFA7ADE7B575 /* ShippedShield */;
 			productType = "com.apple.product-type.framework";
 		};
 		639675F72360C57B5D42575061C1E447 /* Pods-ShippedShield_Tests */ = {
@@ -519,7 +520,7 @@
 			);
 			name = "Pods-ShippedShield_Tests";
 			productName = Pods_ShippedShield_Tests;
-			productReference = 237E8097892DC77988BC5D165EBCD3B8 /* Pods_ShippedShield_Tests.framework */;
+			productReference = 237E8097892DC77988BC5D165EBCD3B8 /* Pods-ShippedShield_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 		66A460420CAE6AA98148C1F488A9E16C /* Pods-ShippedShield_Example */ = {
@@ -538,7 +539,7 @@
 			);
 			name = "Pods-ShippedShield_Example";
 			productName = Pods_ShippedShield_Example;
-			productReference = 6E155B4BD699BECA0F7E19D9ACA63121 /* Pods_ShippedShield_Example.framework */;
+			productReference = 6E155B4BD699BECA0F7E19D9ACA63121 /* Pods-ShippedShield_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 		98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */ = {
@@ -556,7 +557,7 @@
 			);
 			name = FBSnapshotTestCase;
 			productName = FBSnapshotTestCase;
-			productReference = 5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */;
+			productReference = 5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */;
 			productType = "com.apple.product-type.framework";
 		};
 		FC08B572E20F162CB7DA1C3063581631 /* ShippedShield-ShippedShield */ = {
@@ -573,7 +574,7 @@
 			);
 			name = "ShippedShield-ShippedShield";
 			productName = ShippedShield;
-			productReference = 0669AD886BC5E8F508CD621CCA4F271B /* ShippedShield.bundle */;
+			productReference = 0669AD886BC5E8F508CD621CCA4F271B /* ShippedShield-ShippedShield */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -619,7 +620,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7B14154E56F0426691663B739096CA7 /* ShippedShield.bundle in Resources */,
+				C7B14154E56F0426691663B739096CA7 /* ShippedShield-ShippedShield in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,7 +758,6 @@
 				PRODUCT_NAME = ShippedShield;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -795,7 +795,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -831,7 +830,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -862,7 +860,6 @@
 				PRODUCT_NAME = FBSnapshotTestCase;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -894,7 +891,6 @@
 				PRODUCT_NAME = FBSnapshotTestCase;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -932,7 +928,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -963,7 +958,6 @@
 				PRODUCT_NAME = ShippedShield;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -983,7 +977,6 @@
 				PRODUCT_NAME = ShippedShield;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -1017,7 +1010,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1035,7 +1027,6 @@
 				PRODUCT_NAME = ShippedShield;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -1091,12 +1082,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -1155,7 +1147,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;

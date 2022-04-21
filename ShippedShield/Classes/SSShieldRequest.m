@@ -12,7 +12,10 @@
 
 - (NSString *)path
 {
-    return @"/api/v1/shield_offers";
+    if (ShippedShield.mode == ShippedShieldDevelopmentMode) {
+        return @"/api/v1/shield_offers";
+    }
+    return @"/v1/shield_offers";
 }
 
 - (SSHTTPMethod)method

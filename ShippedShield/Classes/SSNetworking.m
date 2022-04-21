@@ -10,7 +10,7 @@
 #import "SSUtils.h"
 
 static NSString * const SSAPIStagingBaseURL = @"https://admin-staging.shippedsuite.com/";
-static NSString * const SSAPIProductionBaseURL = @"https://admin.shippedsuite.com/";
+static NSString * const SSAPIProductionBaseURL = @"https://api.shippedsuite.com/";
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
 

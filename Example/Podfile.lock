@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - ShippedShield (0.1.3)
+  - ShippedShield (0.1.4)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  ShippedShield: c5eaacf3c07af45222de5a2e89c48d8e7d8c2829
+  ShippedShield: 9420746d813f13e63c71bab1aa10bba5cd4dcbe4
 
 PODFILE CHECKSUM: 65763c58f8950af7ced6aaba01fa054e888445f4
 

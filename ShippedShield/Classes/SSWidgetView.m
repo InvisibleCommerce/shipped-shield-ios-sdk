@@ -10,6 +10,14 @@
 #import "ShippedShield+API.h"
 #import "SSLearnMoreViewController.h"
 
+// Callback Keys
+NSString * const SSWidgetViewIsShieldEnabledKey = @"isShieldEnabled";
+NSString * const SSWidgetViewShieldFeeKey = @"shieldFee";
+NSString * const SSWidgetViewErrorKey = @"error";
+
+// UserDefaults Keys
+NSString * const SSUserDefaultsIsShieldEnabledKey = @"SSUserDefaultsIsShieldEnabledKey";
+
 @interface SSWidgetView ()
 
 @property (nonatomic, strong) UISwitch *shieldSwitch;
@@ -47,6 +55,9 @@
 {
     _shieldSwitch = [UISwitch new];
     _shieldSwitch.on = YES;
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:SSUserDefaultsIsShieldEnabledKey]) {
+        _shieldSwitch.on = [[NSUserDefaults standardUserDefaults] boolForKey:SSUserDefaultsIsShieldEnabledKey];
+    }
     [_shieldSwitch addTarget:self action:@selector(shieldStateChanged:) forControlEvents:UIControlEventValueChanged];
     _shieldSwitch.translatesAutoresizingMaskIntoConstraints = NO;
     [self addSubview:_shieldSwitch];
@@ -112,6 +123,8 @@
 
 - (void)shieldStateChanged:(id)sender
 {
+    [[NSUserDefaults standardUserDefaults] setBool:_shieldSwitch.isOn forKey:SSUserDefaultsIsShieldEnabledKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     [self triggerShieldChangeWithError:nil];
 }
 
@@ -136,11 +149,11 @@
 - (void)triggerShieldChangeWithError:(nullable NSError *)error
 {
     if (self.delegate && [self.delegate respondsToSelector:@selector(widgetView:onChange:)]) {
-        NSMutableDictionary *values = [NSMutableDictionary dictionaryWithObject:@(_shieldSwitch.isOn) forKey:@"isShieldEnabled"];
+        NSMutableDictionary *values = [NSMutableDictionary dictionaryWithObject:@(_shieldSwitch.isOn) forKey:SSWidgetViewIsShieldEnabledKey];
         if (_shieldFee) {
-            values[@"shieldFee"] = _shieldFee;
+            values[SSWidgetViewShieldFeeKey] = _shieldFee;
         } else if (error) {
-            values[@"error"] = error;
+            values[SSWidgetViewErrorKey] = error;
         }
         [self.delegate widgetView:self onChange:values];
     }

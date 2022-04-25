@@ -156,4 +156,4 @@ if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
 
 ## License
 
-ShippedShield is available under the MIT license. See the LICENSE file for more info.
+ShippedShield is available under the MIT license. See the [LICENSE](LICENSE) file for more info.

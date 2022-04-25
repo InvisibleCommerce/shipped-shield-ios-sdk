@@ -8,6 +8,5 @@ target 'ShippedShield_Example' do
   target 'ShippedShield_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase'
   end
 end

@@ -15,13 +15,13 @@
   "platforms": {
     "ios": "11.0"
   },
-  "source_files": "Sources/Classes/**/*",
+  "source_files": "Sources/ShippedShield/Classes/**/*",
   "resource_bundles": {
     "ShippedShield": [
-      "Sources/Assets/*.xcassets"
+      "Sources/ShippedShield/Assets/*.xcassets"
     ]
   },
-  "public_header_files": "Sources/Classes/**/*.h",
+  "public_header_files": "Sources/ShippedShield/Classes/**/*.h",
   "frameworks": [
     "Foundation",
     "UIKit"

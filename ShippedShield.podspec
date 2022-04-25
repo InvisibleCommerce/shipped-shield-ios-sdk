@@ -16,10 +16,10 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/InvisibleCommerce/shipped-shield-ios-sdk.git', :tag => s.version.to_s }
     s.platform         = :ios
     s.ios.deployment_target = '11.0'
-    s.source_files     = 'ShippedShield/Classes/**/*'
+    s.source_files     = 'Sources/Classes/**/*'
     s.resource_bundles = {
-        'ShippedShield' => ['ShippedShield/Assets/*.xcassets']
+        'ShippedShield' => ['Sources/Assets/*.xcassets']
     }
-    s.public_header_files = 'ShippedShield/Classes/**/*.h'
+    s.public_header_files = 'Sources/Classes/**/*.h'
     s.frameworks       = 'Foundation', 'UIKit'
 end

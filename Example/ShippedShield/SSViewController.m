@@ -49,7 +49,7 @@
     
     NSError *error = values[SSWidgetViewErrorKey];
     if (error) {
-        NSLog(@"Shield widget on change: %@", error.localizedDescription);
+        NSLog(@"Widget error: %@", error.localizedDescription);
     }
 }
 

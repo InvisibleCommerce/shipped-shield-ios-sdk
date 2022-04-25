@@ -108,15 +108,24 @@ To get the callback from widget, you need implement the `SSWidgetViewDelegate` d
 
 - (void)widgetView:(SSWidgetView *)widgetView onChange:(NSDictionary *)values
 {
-    NSLog(@"Shield widget on change: %@", values);
+    BOOL isShieldEnabled = [values[SSWidgetViewIsShieldEnabledKey] boolValue];
+    NSLog(@"Shield Fee: %@", isShieldEnabled ? @"YES" : @"NO");
+    
+    NSDecimalNumber *fee = values[SSWidgetViewShieldFeeKey];
+    if (fee) {
+        NSLog(@"Shield Fee: %@", fee.stringValue);
+    }
+    
+    NSError *error = values[SSWidgetViewErrorKey];
+    if (error) {
+        NSLog(@"Widget error: %@", error.localizedDescription);
+    }
 }
 ```
 
 ```
-Shield widget on change: {
-    isShieldEnabled = true;
-    shieldFee = "1.82";
-}
+Shield Fee: NO
+Shield Fee: 2.27
 ```
 
 Within the callback, implement any logic necessary to add or remove Shield from the cart, based on whether `isShieldEnabled` is true or false. 

@@ -39,7 +39,18 @@
 
 - (void)widgetView:(SSWidgetView *)widgetView onChange:(NSDictionary *)values
 {
-    NSLog(@"Shield widget on change: %@", values);
+    BOOL isShieldEnabled = [values[SSWidgetViewIsShieldEnabledKey] boolValue];
+    NSLog(@"Shield Fee: %@", isShieldEnabled ? @"YES" : @"NO");
+    
+    NSDecimalNumber *fee = values[SSWidgetViewShieldFeeKey];
+    if (fee) {
+        NSLog(@"Shield Fee: %@", fee.stringValue);
+    }
+    
+    NSError *error = values[SSWidgetViewErrorKey];
+    if (error) {
+        NSLog(@"Shield widget on change: %@", error.localizedDescription);
+    }
 }
 
 #pragma mark - UITextFieldDelegate

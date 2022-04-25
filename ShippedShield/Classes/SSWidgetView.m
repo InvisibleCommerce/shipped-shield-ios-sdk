@@ -26,7 +26,7 @@ NSString * const SSUserDefaultsIsShieldEnabledKey = @"SSUserDefaultsIsShieldEnab
 @property (nonatomic, strong) UIButton *learnMoreButton;
 @property (nonatomic, strong) UILabel *feeLabel;
 @property (nonatomic, strong) UILabel *descLabel;
-@property (nonatomic, strong) NSDecimalNumber *shieldFee;
+@property (nonatomic, strong, nullable) NSDecimalNumber *shieldFee;
 
 @end
 

@@ -11,16 +11,12 @@ let package = Package(
     products: [
         .library(
             name: "ShippedShield",
-            targets: ["ShippedShield"]),
-    ],
-    dependencies: [
+            targets: ["ShippedShield"])
     ],
     targets: [
         .target(
             name: "ShippedShield",
-            dependencies: [])
-    ],
-    swiftLanguageVersions: [
-        .v5
+            path: "ShippedShield",
+            publicHeadersPath: "")
     ]
 )

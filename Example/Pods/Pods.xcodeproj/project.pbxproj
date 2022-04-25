@@ -7,72 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04AE79EA086C81B74C81878F420E7F07 /* ShippedShield-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63437332149B1C28A8DBAC48D1823FA8 /* ShippedShield-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		079F76A73121671C9D5B3D2D0858716C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		0B78A21DA955CB526AB34DAD23F4D7DF /* ShippedShield-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1278E9CEABB82FD395E5F0ACB2136D5F /* ShippedShield-dummy.m */; };
+		09CACFF2C897D38D384B7E11803A9E02 /* SSShieldRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB29DBA7D7025694C86F904A918888D /* SSShieldRequest.m */; };
+		12539E489E0EE01420EE4F1FCA4FDE83 /* SSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = D9C392128C7D955ED1C514EADA6A1909 /* SSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F84FE646CD1D7BAFFB58C243277AFF8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23FF45C07113F7DF635FA29270E6D1AF /* Pods-ShippedShield_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D5B0831A31D0AC9AB5FBC3D2FC6B07A /* Pods-ShippedShield_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		286AEBEE4B9A7EAD8C9E5F393D73CF64 /* ShippedShield-ShippedShield_ShippedShield in Resources */ = {isa = PBXBuildFile; fileRef = DF38EB639999D74DB425CF9164611FFA /* ShippedShield-ShippedShield_ShippedShield */; };
 		2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */; };
-		2A822729FD5AED582D583A840E4EECDD /* SSNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C12D9BAFB5AC36E16D18853601103999 /* SSNetworking.m */; };
 		2B88C28DD20CBFA7B3AEB21A365197FE /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C9231FEC996BDEE77F0CAC013C48D53 /* SSShieldRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD80A72E19A09C71BD62EBAB9618C10 /* SSShieldRequest.m */; };
 		2CB61F6FA511CAACB43A50DC3A82E0DD /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */; };
+		2E02523F6D4025D3F0744872EAA45DC8 /* SSShieldResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8229AD9A4455E69B16502F85FB3FD5F0 /* SSShieldResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E1765F3DAEE0F6307B73BEA23F0C49A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB065160340C03C4B533489C327B84F /* Assets.xcassets */; };
 		2ECCAC52EF4C74E1032E0BC646BBE5B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		302420E5B364C52C344D30ED2E5FF681 /* Pods-ShippedShield_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45F75E7647AEA92DE78F46D56B0185F6 /* Pods-ShippedShield_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
 		373413256658309F9053CE22BF62077E /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		40B25391CEB726C1730138E89D86DA02 /* SSUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F0B1A16246567E3618372A978B9EC8F0 /* SSUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423A6C0D87F5A6192DA89A183876CEA4 /* SSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 99891C34C663C2332FC35F89F18DAC56 /* SSUtils.m */; };
+		4502C56117A497E5BE85D00B37352E5F /* SSWidgetView.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C3FA91966630EDF5FF5B5B7DD30A09 /* SSWidgetView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48C984A3D58DDE6D8A5120FC3C50E3A4 /* Pods-ShippedShield_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE969EE40E304B827786EE731313F7E5 /* Pods-ShippedShield_Tests-dummy.m */; };
-		50167220086819BE19F135BDAAF6AAAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
 		5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5A11264E2D9BD90F95517CD640619C0E /* SSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC4DFC5E5EB12DC0E3DC5C1F39665D /* SSLogger.m */; };
 		5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
 		640CCE9C3A28AA3CA15510899F9140EE /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66DBCF078A57FE57937CE00121F3EC41 /* ShippedShield-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DA999F2D2AC4E59F9220F41CD6AB0C /* ShippedShield-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67DB79C339AB3B884A5F3A05C681AE26 /* SSLearnMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FA25C600F3F4CC8DDBF8703A23F3FA /* SSLearnMoreViewController.m */; };
 		67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		6E0D4DB4C77BD6C4A847D25BDC34872E /* SSWidgetView.h in Headers */ = {isa = PBXBuildFile; fileRef = C4AD9D29E2F72ECD8B0F2254351CDAEF /* SSWidgetView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
-		7A97AB5B1440C7E25B59515A306256CE /* ShippedShield.h in Headers */ = {isa = PBXBuildFile; fileRef = 360B762A4CEC50C8A22F7E0920FA96CC /* ShippedShield.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79470BBC846DE08FD677521464F8F015 /* SSShieldRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 809AEF31E91636BFAD50E34C3D40B909 /* SSShieldRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7AB0F2BB301ADD0A50D27FFC6FF2B6E7 /* Pods-ShippedShield_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C08289DB5B2D93285D1497F6A3778C59 /* Pods-ShippedShield_Example-dummy.m */; };
 		7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
+		806CA01FEC10AEB2CF4B14419E4377FE /* ShippedShield-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A37836AC520FC87938AB0BAFFA39C96 /* ShippedShield-dummy.m */; };
+		80A3E951A2491C9DF67D7A3224683A50 /* SSShieldResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CC7DB0E04E84F4956B1B768B9C4F6A /* SSShieldResponse.m */; };
 		875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
 		8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		8B2B90B8F83E68ECD44F7F321EE4E567 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		9A50EB633B085FF252E6CDED6BDD9AD2 /* SSShieldResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B09A2ACA1D3FBDBDF4C25BD49615D75 /* SSShieldResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
+		A09109010A9F6C6A37168BE4104799A0 /* SSLearnMoreViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CBA70C5A883D58273B61096FCD7CB47 /* SSLearnMoreViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9AD5E5BE7ACBCF7AA8A7BB2412DC320 /* SSNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0569BE69B483385C5AF512EEF81B3491 /* SSNetworking.m */; };
+		B18A4D06C42BDD1A6CDC009AF399F844 /* ShippedShield+API.h in Headers */ = {isa = PBXBuildFile; fileRef = 22884B47D6E8C0A3C7BC1C316593713D /* ShippedShield+API.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B243C002E8BE54A834838C59D9FA3838 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
-		B6AB57790492A8490BD858003E679695 /* SSWidgetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D71085C504429BADC5018AAC0A8318 /* SSWidgetView.m */; };
-		BBFF8090CE15FF953AAA28BF84294F47 /* SSShieldRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 859D3AEDA99D246F3C7B43CCCD69DE6D /* SSShieldRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE7461341089E35A4CCC5E7594892714 /* ShippedShield+API.h in Headers */ = {isa = PBXBuildFile; fileRef = 91218634686B0004F1519C0829E8CF13 /* ShippedShield+API.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF763BF81E3CA3BEEEA17631722A4198 /* ShippedShield+API.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2895F930A11CE1A909633A7C206D43 /* ShippedShield+API.m */; };
+		BD487B28BC15B1F82D52305A2212C0A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
+		C11B55611F1852529FDD38B32034E5CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
-		C79EA68231972DC18914E12728E86554 /* SSNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F2CDAB809A6E38974581D7AAA2D36415 /* SSNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7B14154E56F0426691663B739096CA7 /* ShippedShield-ShippedShield in Resources */ = {isa = PBXBuildFile; fileRef = 0669AD886BC5E8F508CD621CCA4F271B /* ShippedShield-ShippedShield */; };
+		C6006B6512AE523F18769799BA9B3C63 /* SSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = B1BBFE13AD44C207DF2CE87686DA7CA2 /* SSLogger.m */; };
 		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
 		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
-		D87BAED5CACF020B68305875B3198608 /* SSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A36C8DDC81E7815C57CDC6B061B2DAE5 /* SSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E54C79F6733CF1584DE235390DCF32A8 /* SSLearnMoreViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4F1C2EFCEE23817AFF4F0E78213BF7 /* SSLearnMoreViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E95CEBF6CB4B3B9E70B4533A91331C55 /* SSShieldResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B90B242B3FD42557D913C487BF6B63 /* SSShieldResponse.m */; };
-		EA885F5CE6854663E8218861FFDCF69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8A2054AD5E535647E985E20D2A00AD2 /* Assets.xcassets */; };
-		EBB9CEEAE6937A77631E8028693117F9 /* SSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB61C7620E8AAC194B6AB09673EED58 /* SSUtils.m */; };
+		D65A6BB93057606003BE1E1275EBA2C3 /* SSNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 19E26CF78CE645471AC44D0C44915F0F /* SSNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1198FB98EF0370E2A2F2EDFD8E02AD7 /* ShippedShield+API.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD3054CA7AAF1CF59BCEABF21C1D2D9 /* ShippedShield+API.m */; };
+		E742A7D9B6C0BAD22A6C7F314A80C304 /* SSLearnMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A2A0A1155328C3627DC237EF49269A /* SSLearnMoreViewController.m */; };
+		EEB80DE803342C6257ECCFF849AFD4AB /* ShippedShield.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E0B400DBCBEBD94105DB1F7AC82CFAD /* ShippedShield.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F85478CFFA83B48A54626E2BF1FB0222 /* SSWidgetView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E29C23074A159AACA0845896D8BF71 /* SSWidgetView.m */; };
+		FB03A1626A29CD61300D3BCBFC3B6082 /* SSUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 49B50E8DEF4D8FA461CE0EAFBCB19C72 /* SSUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3F569DC326CAF69921724A8CFAB361CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FC08B572E20F162CB7DA1C3063581631;
-			remoteInfo = "ShippedShield-ShippedShield";
-		};
 		4B4A0904872DD1ED5B5CC74AA2E522ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 66A460420CAE6AA98148C1F488A9E16C;
 			remoteInfo = "Pods-ShippedShield_Example";
+		};
+		55096F28BBE0CE1342723B1A4759E4A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ED3D308588A5A62C48F216A8F7DB6D7;
+			remoteInfo = "ShippedShield-ShippedShield_ShippedShield";
 		};
 		6D8405FB6351D9D933ADF95ACA8E7616 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -91,104 +91,88 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0669AD886BC5E8F508CD621CCA4F271B /* ShippedShield-ShippedShield */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ShippedShield-ShippedShield"; path = ShippedShield.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		09FA25C600F3F4CC8DDBF8703A23F3FA /* SSLearnMoreViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSLearnMoreViewController.m; path = Sources/ShippedShield/Classes/SSLearnMoreViewController.m; sourceTree = "<group>"; };
+		0569BE69B483385C5AF512EEF81B3491 /* SSNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSNetworking.m; path = ShippedShield/Classes/SSNetworking.m; sourceTree = "<group>"; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
-		1278E9CEABB82FD395E5F0ACB2136D5F /* ShippedShield-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ShippedShield-dummy.m"; sourceTree = "<group>"; };
 		172B659DB4BA2A88C0A1C990159E3B7D /* Pods-ShippedShield_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShippedShield_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		19E26CF78CE645471AC44D0C44915F0F /* SSNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSNetworking.h; path = ShippedShield/Classes/SSNetworking.h; sourceTree = "<group>"; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		1C2D145D7F59013360E13BF3670D86F6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		20DA999F2D2AC4E59F9220F41CD6AB0C /* ShippedShield-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShippedShield-umbrella.h"; sourceTree = "<group>"; };
-		22148D3CCB5B37B043DF856F5B7FB824 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		21A2A0A1155328C3627DC237EF49269A /* SSLearnMoreViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSLearnMoreViewController.m; path = ShippedShield/Classes/SSLearnMoreViewController.m; sourceTree = "<group>"; };
+		22884B47D6E8C0A3C7BC1C316593713D /* ShippedShield+API.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ShippedShield+API.h"; path = "ShippedShield/Classes/ShippedShield+API.h"; sourceTree = "<group>"; };
 		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		237E8097892DC77988BC5D165EBCD3B8 /* Pods-ShippedShield_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ShippedShield_Tests"; path = Pods_ShippedShield_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A5702BAD16E36768CA7FC2052F0182 /* Pods-ShippedShield_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShippedShield_Example-Info.plist"; sourceTree = "<group>"; };
 		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		31CC7DB0E04E84F4956B1B768B9C4F6A /* SSShieldResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSShieldResponse.m; path = ShippedShield/Classes/SSShieldResponse.m; sourceTree = "<group>"; };
 		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		360B762A4CEC50C8A22F7E0920FA96CC /* ShippedShield.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ShippedShield.h; path = Sources/ShippedShield/Classes/ShippedShield.h; sourceTree = "<group>"; };
-		36348D8A3EED9D6F79A69872795B5748 /* ResourceBundle-ShippedShield-ShippedShield-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ShippedShield-ShippedShield-Info.plist"; sourceTree = "<group>"; };
-		3B09A2ACA1D3FBDBDF4C25BD49615D75 /* SSShieldResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSShieldResponse.h; path = Sources/ShippedShield/Classes/SSShieldResponse.h; sourceTree = "<group>"; };
-		3B4F1C2EFCEE23817AFF4F0E78213BF7 /* SSLearnMoreViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSLearnMoreViewController.h; path = Sources/ShippedShield/Classes/SSLearnMoreViewController.h; sourceTree = "<group>"; };
+		3A5435010200D0F08C8B216095766864 /* ShippedShield-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShippedShield-prefix.pch"; sourceTree = "<group>"; };
 		3BFA1D6467568AC92A1177BC2EFA86F2 /* Pods-ShippedShield_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShippedShield_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		45F75E7647AEA92DE78F46D56B0185F6 /* Pods-ShippedShield_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShippedShield_Tests-umbrella.h"; sourceTree = "<group>"; };
+		49B50E8DEF4D8FA461CE0EAFBCB19C72 /* SSUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSUtils.h; path = ShippedShield/Classes/SSUtils.h; sourceTree = "<group>"; };
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
+		4E0B400DBCBEBD94105DB1F7AC82CFAD /* ShippedShield.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ShippedShield.h; path = ShippedShield/Classes/ShippedShield.h; sourceTree = "<group>"; };
 		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E700CE18C3EFA223CEDE46D246D769A /* ShippedShield.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ShippedShield.release.xcconfig; sourceTree = "<group>"; };
-		60D43763C1CC692D5A07CDAC955C508F /* ShippedShield-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShippedShield-prefix.pch"; sourceTree = "<group>"; };
+		60D65299DB14E9F4DFD206D7F8851771 /* ShippedShield.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ShippedShield.debug.xcconfig; sourceTree = "<group>"; };
+		63437332149B1C28A8DBAC48D1823FA8 /* ShippedShield-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShippedShield-umbrella.h"; sourceTree = "<group>"; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		6A37836AC520FC87938AB0BAFFA39C96 /* ShippedShield-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ShippedShield-dummy.m"; sourceTree = "<group>"; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		6E155B4BD699BECA0F7E19D9ACA63121 /* Pods-ShippedShield_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ShippedShield_Example"; path = Pods_ShippedShield_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		793F7CCCDE6463FE8B5D75DF3977F7B0 /* ShippedShield.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ShippedShield.debug.xcconfig; sourceTree = "<group>"; };
+		6FB065160340C03C4B533489C327B84F /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ShippedShield/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		7AB29DBA7D7025694C86F904A918888D /* SSShieldRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSShieldRequest.m; path = ShippedShield/Classes/SSShieldRequest.m; sourceTree = "<group>"; };
+		7CBA70C5A883D58273B61096FCD7CB47 /* SSLearnMoreViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSLearnMoreViewController.h; path = ShippedShield/Classes/SSLearnMoreViewController.h; sourceTree = "<group>"; };
+		7CEE7558F6DB8FC1B891EB1E12E6E538 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		809AEF31E91636BFAD50E34C3D40B909 /* SSShieldRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSShieldRequest.h; path = ShippedShield/Classes/SSShieldRequest.h; sourceTree = "<group>"; };
+		8229AD9A4455E69B16502F85FB3FD5F0 /* SSShieldResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSShieldResponse.h; path = ShippedShield/Classes/SSShieldResponse.h; sourceTree = "<group>"; };
 		836D86AF31C6F3B7859964C1FE1C819F /* Pods-ShippedShield_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShippedShield_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		84D71085C504429BADC5018AAC0A8318 /* SSWidgetView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSWidgetView.m; path = Sources/ShippedShield/Classes/SSWidgetView.m; sourceTree = "<group>"; };
-		859D3AEDA99D246F3C7B43CCCD69DE6D /* SSShieldRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSShieldRequest.h; path = Sources/ShippedShield/Classes/SSShieldRequest.h; sourceTree = "<group>"; };
-		85A84FAD0FD96CC9C949878FF896B3D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		85B90B242B3FD42557D913C487BF6B63 /* SSShieldResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSShieldResponse.m; path = Sources/ShippedShield/Classes/SSShieldResponse.m; sourceTree = "<group>"; };
 		862D442929B106FCB251A44E4BE9DB0A /* Pods-ShippedShield_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShippedShield_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		8BD80A72E19A09C71BD62EBAB9618C10 /* SSShieldRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSShieldRequest.m; path = Sources/ShippedShield/Classes/SSShieldRequest.m; sourceTree = "<group>"; };
-		8C8B3D5E062B73C023668539F3253970 /* ShippedShield.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ShippedShield.modulemap; sourceTree = "<group>"; };
 		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		8F1C455C674B52FAE936CA4AFEDF3D56 /* Pods-ShippedShield_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShippedShield_Example.release.xcconfig"; sourceTree = "<group>"; };
-		91218634686B0004F1519C0829E8CF13 /* ShippedShield+API.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ShippedShield+API.h"; path = "Sources/ShippedShield/Classes/ShippedShield+API.h"; sourceTree = "<group>"; };
 		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		99891C34C663C2332FC35F89F18DAC56 /* SSUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSUtils.m; path = ShippedShield/Classes/SSUtils.m; sourceTree = "<group>"; };
 		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		9D5B0831A31D0AC9AB5FBC3D2FC6B07A /* Pods-ShippedShield_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShippedShield_Example-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FCA9A68372E312413AC29157384CE7E /* Pods-ShippedShield_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShippedShield_Tests.modulemap"; sourceTree = "<group>"; };
-		9FDC4DFC5E5EB12DC0E3DC5C1F39665D /* SSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSLogger.m; path = Sources/ShippedShield/Classes/SSLogger.m; sourceTree = "<group>"; };
-		A36C8DDC81E7815C57CDC6B061B2DAE5 /* SSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSLogger.h; path = Sources/ShippedShield/Classes/SSLogger.h; sourceTree = "<group>"; };
+		A3E29C23074A159AACA0845896D8BF71 /* SSWidgetView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSWidgetView.m; path = ShippedShield/Classes/SSWidgetView.m; sourceTree = "<group>"; };
+		A672D4DCABE2191B0F424E8E3B139EF0 /* ShippedShield-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ShippedShield-Info.plist"; sourceTree = "<group>"; };
 		AC3E9CD41F81EE9FDFFA584E1FB68361 /* Pods-ShippedShield_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShippedShield_Example-frameworks.sh"; sourceTree = "<group>"; };
+		AE4100179A92CF92F803C518D6B1AAB8 /* ResourceBundle-ShippedShield_ShippedShield-ShippedShield-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ShippedShield_ShippedShield-ShippedShield-Info.plist"; sourceTree = "<group>"; };
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		AEB61C7620E8AAC194B6AB09673EED58 /* SSUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSUtils.m; path = Sources/ShippedShield/Classes/SSUtils.m; sourceTree = "<group>"; };
 		B1BB17B291EF4B2299BEB1E6379D22E9 /* Pods-ShippedShield_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShippedShield_Tests-Info.plist"; sourceTree = "<group>"; };
+		B1BBFE13AD44C207DF2CE87686DA7CA2 /* SSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSLogger.m; path = ShippedShield/Classes/SSLogger.m; sourceTree = "<group>"; };
 		B6C2FC849ACF3CFD9583B9151704584C /* Pods-ShippedShield_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShippedShield_Example.modulemap"; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
-		BB2895F930A11CE1A909633A7C206D43 /* ShippedShield+API.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ShippedShield+API.m"; path = "Sources/ShippedShield/Classes/ShippedShield+API.m"; sourceTree = "<group>"; };
-		BE961A73C6FAAB08D2F47BFA0CD4F679 /* ShippedShield.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ShippedShield.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BAD3054CA7AAF1CF59BCEABF21C1D2D9 /* ShippedShield+API.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ShippedShield+API.m"; path = "ShippedShield/Classes/ShippedShield+API.m"; sourceTree = "<group>"; };
 		C08289DB5B2D93285D1497F6A3778C59 /* Pods-ShippedShield_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShippedShield_Example-dummy.m"; sourceTree = "<group>"; };
-		C12D9BAFB5AC36E16D18853601103999 /* SSNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSNetworking.m; path = Sources/ShippedShield/Classes/SSNetworking.m; sourceTree = "<group>"; };
-		C4AD9D29E2F72ECD8B0F2254351CDAEF /* SSWidgetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSWidgetView.h; path = Sources/ShippedShield/Classes/SSWidgetView.h; sourceTree = "<group>"; };
-		C8A2054AD5E535647E985E20D2A00AD2 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sources/ShippedShield/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		C3DD5D7A386F09F05A9DD51E320B4139 /* ShippedShield.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ShippedShield.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		CC61F38813F55DE23E29C45CC1165FB8 /* Pods-ShippedShield_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShippedShield_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		CD09200FDA688121E71DC9C8DE0C2178 /* Pods-ShippedShield_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShippedShield_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CF2E8E8BAB60999530A90A31CBEE2F3E /* Pods-ShippedShield_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShippedShield_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		D190AE58945AAEA943D4C86A48DC7E9D /* ShippedShield.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ShippedShield.modulemap; sourceTree = "<group>"; };
+		D83468F3ED516ADD7B475224D520A434 /* ShippedShield.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ShippedShield.release.xcconfig; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		D9C392128C7D955ED1C514EADA6A1909 /* SSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSLogger.h; path = ShippedShield/Classes/SSLogger.h; sourceTree = "<group>"; };
 		DCD60B4445A0690C619B16C743953477 /* Pods-ShippedShield_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShippedShield_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		DF38EB639999D74DB425CF9164611FFA /* ShippedShield-ShippedShield_ShippedShield */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ShippedShield-ShippedShield_ShippedShield"; path = ShippedShield_ShippedShield.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		EE969EE40E304B827786EE731313F7E5 /* Pods-ShippedShield_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShippedShield_Tests-dummy.m"; sourceTree = "<group>"; };
-		F0B1A16246567E3618372A978B9EC8F0 /* SSUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSUtils.h; path = Sources/ShippedShield/Classes/SSUtils.h; sourceTree = "<group>"; };
-		F2CDAB809A6E38974581D7AAA2D36415 /* SSNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSNetworking.h; path = Sources/ShippedShield/Classes/SSNetworking.h; sourceTree = "<group>"; };
+		F2C3FA91966630EDF5FF5B5B7DD30A09 /* SSWidgetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSWidgetView.h; path = ShippedShield/Classes/SSWidgetView.h; sourceTree = "<group>"; };
 		F568323D3A8D78DB0C0DAFA7ADE7B575 /* ShippedShield */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ShippedShield; path = ShippedShield.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA003AD550C1520D0FDD3B2CADA5C053 /* ShippedShield-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ShippedShield-Info.plist"; sourceTree = "<group>"; };
 		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0DAA33DA37C5DA81614D7F74B60BFC33 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8B2B90B8F83E68ECD44F7F321EE4E567 /* Foundation.framework in Frameworks */,
-				50167220086819BE19F135BDAAF6AAAD /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		11C67F230C8C556D7F5FA09768B19309 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6CE612F7262BE47F3471CD8632B49BE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,6 +186,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				079F76A73121671C9D5B3D2D0858716C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCB730ECB9E8C352B03544EB57CAC18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C3007EB524E91DD08CE1A947274266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11B55611F1852529FDD38B32034E5CF /* Foundation.framework in Frameworks */,
+				BD487B28BC15B1F82D52305A2212C0A7 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +219,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		405AE2998649D2DFA3F3B18CD5FFEBDC /* ShippedShield */ = {
+			isa = PBXGroup;
+			children = (
+				6FB065160340C03C4B533489C327B84F /* Assets.xcassets */,
+				4E0B400DBCBEBD94105DB1F7AC82CFAD /* ShippedShield.h */,
+				22884B47D6E8C0A3C7BC1C316593713D /* ShippedShield+API.h */,
+				BAD3054CA7AAF1CF59BCEABF21C1D2D9 /* ShippedShield+API.m */,
+				7CBA70C5A883D58273B61096FCD7CB47 /* SSLearnMoreViewController.h */,
+				21A2A0A1155328C3627DC237EF49269A /* SSLearnMoreViewController.m */,
+				D9C392128C7D955ED1C514EADA6A1909 /* SSLogger.h */,
+				B1BBFE13AD44C207DF2CE87686DA7CA2 /* SSLogger.m */,
+				19E26CF78CE645471AC44D0C44915F0F /* SSNetworking.h */,
+				0569BE69B483385C5AF512EEF81B3491 /* SSNetworking.m */,
+				809AEF31E91636BFAD50E34C3D40B909 /* SSShieldRequest.h */,
+				7AB29DBA7D7025694C86F904A918888D /* SSShieldRequest.m */,
+				8229AD9A4455E69B16502F85FB3FD5F0 /* SSShieldResponse.h */,
+				31CC7DB0E04E84F4956B1B768B9C4F6A /* SSShieldResponse.m */,
+				49B50E8DEF4D8FA461CE0EAFBCB19C72 /* SSUtils.h */,
+				99891C34C663C2332FC35F89F18DAC56 /* SSUtils.m */,
+				F2C3FA91966630EDF5FF5B5B7DD30A09 /* SSWidgetView.h */,
+				A3E29C23074A159AACA0845896D8BF71 /* SSWidgetView.m */,
+				E6F7ECE7EFC0E3F23884A4EF1D00BF1D /* Pod */,
+				DC4551FF028CC4871FDADC87684F7A41 /* Support Files */,
+			);
+			name = ShippedShield;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		4BA2479549DD918290454B1CDCD0B92B /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,44 +266,6 @@
 				D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */,
 			);
 			name = Core;
-			sourceTree = "<group>";
-		};
-		4D4932FAC09D6F7A4A66B82B7214690E /* ShippedShield */ = {
-			isa = PBXGroup;
-			children = (
-				C8A2054AD5E535647E985E20D2A00AD2 /* Assets.xcassets */,
-				360B762A4CEC50C8A22F7E0920FA96CC /* ShippedShield.h */,
-				91218634686B0004F1519C0829E8CF13 /* ShippedShield+API.h */,
-				BB2895F930A11CE1A909633A7C206D43 /* ShippedShield+API.m */,
-				3B4F1C2EFCEE23817AFF4F0E78213BF7 /* SSLearnMoreViewController.h */,
-				09FA25C600F3F4CC8DDBF8703A23F3FA /* SSLearnMoreViewController.m */,
-				A36C8DDC81E7815C57CDC6B061B2DAE5 /* SSLogger.h */,
-				9FDC4DFC5E5EB12DC0E3DC5C1F39665D /* SSLogger.m */,
-				F2CDAB809A6E38974581D7AAA2D36415 /* SSNetworking.h */,
-				C12D9BAFB5AC36E16D18853601103999 /* SSNetworking.m */,
-				859D3AEDA99D246F3C7B43CCCD69DE6D /* SSShieldRequest.h */,
-				8BD80A72E19A09C71BD62EBAB9618C10 /* SSShieldRequest.m */,
-				3B09A2ACA1D3FBDBDF4C25BD49615D75 /* SSShieldResponse.h */,
-				85B90B242B3FD42557D913C487BF6B63 /* SSShieldResponse.m */,
-				F0B1A16246567E3618372A978B9EC8F0 /* SSUtils.h */,
-				AEB61C7620E8AAC194B6AB09673EED58 /* SSUtils.m */,
-				C4AD9D29E2F72ECD8B0F2254351CDAEF /* SSWidgetView.h */,
-				84D71085C504429BADC5018AAC0A8318 /* SSWidgetView.m */,
-				54B4088C29395F8007404A57EA7A4D52 /* Pod */,
-				B6B8436CBAD97000749DA045FEAE114E /* Support Files */,
-			);
-			name = ShippedShield;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		54B4088C29395F8007404A57EA7A4D52 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				85A84FAD0FD96CC9C949878FF896B3D3 /* LICENSE */,
-				22148D3CCB5B37B043DF856F5B7FB824 /* README.md */,
-				BE961A73C6FAAB08D2F47BFA0CD4F679 /* ShippedShield.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		653901A43E58935AD32550FAC5FDC236 /* Pods-ShippedShield_Tests */ = {
@@ -307,7 +297,7 @@
 		87DD80602675C65DBAB0DF30DE0327B7 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4D4932FAC09D6F7A4A66B82B7214690E /* ShippedShield */,
+				405AE2998649D2DFA3F3B18CD5FFEBDC /* ShippedShield */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -352,22 +342,6 @@
 			path = "../Target Support Files/FBSnapshotTestCase";
 			sourceTree = "<group>";
 		};
-		B6B8436CBAD97000749DA045FEAE114E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				36348D8A3EED9D6F79A69872795B5748 /* ResourceBundle-ShippedShield-ShippedShield-Info.plist */,
-				8C8B3D5E062B73C023668539F3253970 /* ShippedShield.modulemap */,
-				1278E9CEABB82FD395E5F0ACB2136D5F /* ShippedShield-dummy.m */,
-				FA003AD550C1520D0FDD3B2CADA5C053 /* ShippedShield-Info.plist */,
-				60D43763C1CC692D5A07CDAC955C508F /* ShippedShield-prefix.pch */,
-				20DA999F2D2AC4E59F9220F41CD6AB0C /* ShippedShield-umbrella.h */,
-				793F7CCCDE6463FE8B5D75DF3977F7B0 /* ShippedShield.debug.xcconfig */,
-				5E700CE18C3EFA223CEDE46D246D769A /* ShippedShield.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ShippedShield";
-			sourceTree = "<group>";
-		};
 		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -394,21 +368,47 @@
 				87DD80602675C65DBAB0DF30DE0327B7 /* Development Pods */,
 				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
 				E81A37DBDE41E671312C56736544E2FA /* Pods */,
-				D02B351F53EC4A45BB4C7E70ACD77D42 /* Products */,
+				DD85265E5581AD76102ECFBE2816506A /* Products */,
 				7B6E93ACF791628C0CC005A3DE9ED578 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D02B351F53EC4A45BB4C7E70ACD77D42 /* Products */ = {
+		DC4551FF028CC4871FDADC87684F7A41 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE4100179A92CF92F803C518D6B1AAB8 /* ResourceBundle-ShippedShield_ShippedShield-ShippedShield-Info.plist */,
+				D190AE58945AAEA943D4C86A48DC7E9D /* ShippedShield.modulemap */,
+				6A37836AC520FC87938AB0BAFFA39C96 /* ShippedShield-dummy.m */,
+				A672D4DCABE2191B0F424E8E3B139EF0 /* ShippedShield-Info.plist */,
+				3A5435010200D0F08C8B216095766864 /* ShippedShield-prefix.pch */,
+				63437332149B1C28A8DBAC48D1823FA8 /* ShippedShield-umbrella.h */,
+				60D65299DB14E9F4DFD206D7F8851771 /* ShippedShield.debug.xcconfig */,
+				D83468F3ED516ADD7B475224D520A434 /* ShippedShield.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ShippedShield";
+			sourceTree = "<group>";
+		};
+		DD85265E5581AD76102ECFBE2816506A /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */,
 				6E155B4BD699BECA0F7E19D9ACA63121 /* Pods-ShippedShield_Example */,
 				237E8097892DC77988BC5D165EBCD3B8 /* Pods-ShippedShield_Tests */,
 				F568323D3A8D78DB0C0DAFA7ADE7B575 /* ShippedShield */,
-				0669AD886BC5E8F508CD621CCA4F271B /* ShippedShield-ShippedShield */,
+				DF38EB639999D74DB425CF9164611FFA /* ShippedShield-ShippedShield_ShippedShield */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E6F7ECE7EFC0E3F23884A4EF1D00BF1D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7CEE7558F6DB8FC1B891EB1E12E6E538 /* LICENSE */,
+				1C2D145D7F59013360E13BF3670D86F6 /* README.md */,
+				C3DD5D7A386F09F05A9DD51E320B4139 /* ShippedShield.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		E81A37DBDE41E671312C56736544E2FA /* Pods */ = {
@@ -449,20 +449,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2A27604623F22AA1D5F3F5EB23F51FE /* Headers */ = {
+		CDDD8368434F432B380C322655E8416E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A97AB5B1440C7E25B59515A306256CE /* ShippedShield.h in Headers */,
-				BE7461341089E35A4CCC5E7594892714 /* ShippedShield+API.h in Headers */,
-				66DBCF078A57FE57937CE00121F3EC41 /* ShippedShield-umbrella.h in Headers */,
-				E54C79F6733CF1584DE235390DCF32A8 /* SSLearnMoreViewController.h in Headers */,
-				D87BAED5CACF020B68305875B3198608 /* SSLogger.h in Headers */,
-				C79EA68231972DC18914E12728E86554 /* SSNetworking.h in Headers */,
-				BBFF8090CE15FF953AAA28BF84294F47 /* SSShieldRequest.h in Headers */,
-				9A50EB633B085FF252E6CDED6BDD9AD2 /* SSShieldResponse.h in Headers */,
-				40B25391CEB726C1730138E89D86DA02 /* SSUtils.h in Headers */,
-				6E0D4DB4C77BD6C4A847D25BDC34872E /* SSWidgetView.h in Headers */,
+				EEB80DE803342C6257ECCFF849AFD4AB /* ShippedShield.h in Headers */,
+				B18A4D06C42BDD1A6CDC009AF399F844 /* ShippedShield+API.h in Headers */,
+				04AE79EA086C81B74C81878F420E7F07 /* ShippedShield-umbrella.h in Headers */,
+				A09109010A9F6C6A37168BE4104799A0 /* SSLearnMoreViewController.h in Headers */,
+				12539E489E0EE01420EE4F1FCA4FDE83 /* SSLogger.h in Headers */,
+				D65A6BB93057606003BE1E1275EBA2C3 /* SSNetworking.h in Headers */,
+				79470BBC846DE08FD677521464F8F015 /* SSShieldRequest.h in Headers */,
+				2E02523F6D4025D3F0744872EAA45DC8 /* SSShieldResponse.h in Headers */,
+				FB03A1626A29CD61300D3BCBFC3B6082 /* SSUtils.h in Headers */,
+				4502C56117A497E5BE85D00B37352E5F /* SSWidgetView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,19 +484,36 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3DDD55311DA854000733A8B00474F6EF /* ShippedShield */ = {
+		0ED3D308588A5A62C48F216A8F7DB6D7 /* ShippedShield-ShippedShield_ShippedShield */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E62DB3DA2EC04A8C40C09CBD6B57648E /* Build configuration list for PBXNativeTarget "ShippedShield" */;
+			buildConfigurationList = C00715AD23784493E0D83C72F46F74ED /* Build configuration list for PBXNativeTarget "ShippedShield-ShippedShield_ShippedShield" */;
 			buildPhases = (
-				D2A27604623F22AA1D5F3F5EB23F51FE /* Headers */,
-				9F73D3DEBC010C3E281D7D1D3248C3CA /* Sources */,
-				0DAA33DA37C5DA81614D7F74B60BFC33 /* Frameworks */,
-				2102A73EB74E6386F9E35FA4FA7C678A /* Resources */,
+				80259FB3B452E7F181D87DC715FA97B0 /* Sources */,
+				ADCB730ECB9E8C352B03544EB57CAC18 /* Frameworks */,
+				85DFF130C0E93F4E2BC7305E5A78084F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1CE71297AE16B8BE41763CC2DB8EC38F /* PBXTargetDependency */,
+			);
+			name = "ShippedShield-ShippedShield_ShippedShield";
+			productName = ShippedShield_ShippedShield;
+			productReference = DF38EB639999D74DB425CF9164611FFA /* ShippedShield-ShippedShield_ShippedShield */;
+			productType = "com.apple.product-type.bundle";
+		};
+		3DDD55311DA854000733A8B00474F6EF /* ShippedShield */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 309EDD80376575A3D882928B0107E8C6 /* Build configuration list for PBXNativeTarget "ShippedShield" */;
+			buildPhases = (
+				CDDD8368434F432B380C322655E8416E /* Headers */,
+				405E57F0E54BCDE93EB161328DAD459E /* Sources */,
+				C9C3007EB524E91DD08CE1A947274266 /* Frameworks */,
+				8178C78C058A11D85A8E79E41F2B095D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				946737B688A74810E42F660E0AD1C288 /* PBXTargetDependency */,
 			);
 			name = ShippedShield;
 			productName = ShippedShield;
@@ -560,23 +577,6 @@
 			productReference = 5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */;
 			productType = "com.apple.product-type.framework";
 		};
-		FC08B572E20F162CB7DA1C3063581631 /* ShippedShield-ShippedShield */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A5E0715693588B9855B2B8D2B709FC6D /* Build configuration list for PBXNativeTarget "ShippedShield-ShippedShield" */;
-			buildPhases = (
-				3BEC0D1F54E4FECB69F697ED528F5B6E /* Sources */,
-				11C67F230C8C556D7F5FA09768B19309 /* Frameworks */,
-				F8E70FDF0325560C8E5E10B219FD9CEE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ShippedShield-ShippedShield";
-			productName = ShippedShield;
-			productReference = 0669AD886BC5E8F508CD621CCA4F271B /* ShippedShield-ShippedShield */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -595,7 +595,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = D02B351F53EC4A45BB4C7E70ACD77D42 /* Products */;
+			productRefGroup = DD85265E5581AD76102ECFBE2816506A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -603,7 +603,7 @@
 				66A460420CAE6AA98148C1F488A9E16C /* Pods-ShippedShield_Example */,
 				639675F72360C57B5D42575061C1E447 /* Pods-ShippedShield_Tests */,
 				3DDD55311DA854000733A8B00474F6EF /* ShippedShield */,
-				FC08B572E20F162CB7DA1C3063581631 /* ShippedShield-ShippedShield */,
+				0ED3D308588A5A62C48F216A8F7DB6D7 /* ShippedShield-ShippedShield_ShippedShield */,
 			);
 		};
 /* End PBXProject section */
@@ -613,14 +613,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2102A73EB74E6386F9E35FA4FA7C678A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C7B14154E56F0426691663B739096CA7 /* ShippedShield-ShippedShield in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,11 +630,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F8E70FDF0325560C8E5E10B219FD9CEE /* Resources */ = {
+		8178C78C058A11D85A8E79E41F2B095D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA885F5CE6854663E8218861FFDCF69F /* Assets.xcassets in Resources */,
+				286AEBEE4B9A7EAD8C9E5F393D73CF64 /* ShippedShield-ShippedShield_ShippedShield in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85DFF130C0E93F4E2BC7305E5A78084F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E1765F3DAEE0F6307B73BEA23F0C49A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,26 +657,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3BEC0D1F54E4FECB69F697ED528F5B6E /* Sources */ = {
+		405E57F0E54BCDE93EB161328DAD459E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1198FB98EF0370E2A2F2EDFD8E02AD7 /* ShippedShield+API.m in Sources */,
+				806CA01FEC10AEB2CF4B14419E4377FE /* ShippedShield-dummy.m in Sources */,
+				E742A7D9B6C0BAD22A6C7F314A80C304 /* SSLearnMoreViewController.m in Sources */,
+				C6006B6512AE523F18769799BA9B3C63 /* SSLogger.m in Sources */,
+				A9AD5E5BE7ACBCF7AA8A7BB2412DC320 /* SSNetworking.m in Sources */,
+				09CACFF2C897D38D384B7E11803A9E02 /* SSShieldRequest.m in Sources */,
+				80A3E951A2491C9DF67D7A3224683A50 /* SSShieldResponse.m in Sources */,
+				423A6C0D87F5A6192DA89A183876CEA4 /* SSUtils.m in Sources */,
+				F85478CFFA83B48A54626E2BF1FB0222 /* SSWidgetView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F73D3DEBC010C3E281D7D1D3248C3CA /* Sources */ = {
+		80259FB3B452E7F181D87DC715FA97B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF763BF81E3CA3BEEEA17631722A4198 /* ShippedShield+API.m in Sources */,
-				0B78A21DA955CB526AB34DAD23F4D7DF /* ShippedShield-dummy.m in Sources */,
-				67DB79C339AB3B884A5F3A05C681AE26 /* SSLearnMoreViewController.m in Sources */,
-				5A11264E2D9BD90F95517CD640619C0E /* SSLogger.m in Sources */,
-				2A822729FD5AED582D583A840E4EECDD /* SSNetworking.m in Sources */,
-				2C9231FEC996BDEE77F0CAC013C48D53 /* SSShieldRequest.m in Sources */,
-				E95CEBF6CB4B3B9E70B4533A91331C55 /* SSShieldResponse.m in Sources */,
-				EBB9CEEAE6937A77631E8028693117F9 /* SSUtils.m in Sources */,
-				B6AB57790492A8490BD858003E679695 /* SSWidgetView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,12 +707,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1CE71297AE16B8BE41763CC2DB8EC38F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ShippedShield-ShippedShield";
-			target = FC08B572E20F162CB7DA1C3063581631 /* ShippedShield-ShippedShield */;
-			targetProxy = 3F569DC326CAF69921724A8CFAB361CC /* PBXContainerItemProxy */;
-		};
 		2609FE0C5C0145A8387A07C5D1A5F130 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ShippedShield_Example";
@@ -725,6 +719,12 @@
 			target = 3DDD55311DA854000733A8B00474F6EF /* ShippedShield */;
 			targetProxy = C2E809DB4057D8976B7C920271D4C471 /* PBXContainerItemProxy */;
 		};
+		946737B688A74810E42F660E0AD1C288 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ShippedShield-ShippedShield_ShippedShield";
+			target = 0ED3D308588A5A62C48F216A8F7DB6D7 /* ShippedShield-ShippedShield_ShippedShield */;
+			targetProxy = 55096F28BBE0CE1342723B1A4759E4A1 /* PBXContainerItemProxy */;
+		};
 		C8E8D0D2E33AE767858C57F411672579 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FBSnapshotTestCase;
@@ -734,39 +734,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0A349CECAE303EB10E710AA4DA7CAF94 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E700CE18C3EFA223CEDE46D246D769A /* ShippedShield.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ShippedShield/ShippedShield-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ShippedShield/ShippedShield-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ShippedShield/ShippedShield.modulemap";
-				PRODUCT_MODULE_NAME = ShippedShield;
-				PRODUCT_NAME = ShippedShield;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		1101D36B90E7FB9792584F9D68C860D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F1C455C674B52FAE936CA4AFEDF3D56 /* Pods-ShippedShield_Example.release.xcconfig */;
@@ -934,9 +901,9 @@
 			};
 			name = Debug;
 		};
-		3875DE6444A45BEA6EDD07E9CC3BB13C /* Debug */ = {
+		43FF8AAC8D082233C00DE51DBF692A61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 793F7CCCDE6463FE8B5D75DF3977F7B0 /* ShippedShield.debug.xcconfig */;
+			baseConfigurationReference = 60D65299DB14E9F4DFD206D7F8851771 /* ShippedShield.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -966,15 +933,48 @@
 			};
 			name = Debug;
 		};
-		4AF8FC41C4540C3ED4C7AF89E2494FC7 /* Release */ = {
+		48BC15BF2917FADFEAEC00187D0825AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E700CE18C3EFA223CEDE46D246D769A /* ShippedShield.release.xcconfig */;
+			baseConfigurationReference = D83468F3ED516ADD7B475224D520A434 /* ShippedShield.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ShippedShield/ShippedShield-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ShippedShield/ShippedShield-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ShippedShield/ShippedShield.modulemap";
+				PRODUCT_MODULE_NAME = ShippedShield;
+				PRODUCT_NAME = ShippedShield;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		549A45560A2D695EC5F5A31D2545F81E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D83468F3ED516ADD7B475224D520A434 /* ShippedShield.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ShippedShield";
 				IBSC_MODULE = ShippedShield;
-				INFOPLIST_FILE = "Target Support Files/ShippedShield/ResourceBundle-ShippedShield-ShippedShield-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/ShippedShield/ResourceBundle-ShippedShield_ShippedShield-ShippedShield-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_NAME = ShippedShield;
+				PRODUCT_NAME = ShippedShield_ShippedShield;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1016,15 +1016,15 @@
 			};
 			name = Debug;
 		};
-		80F0AC040F77AABFE9A22CAB9E778443 /* Debug */ = {
+		7C8FD44653BDC96BFA20C097E6735614 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 793F7CCCDE6463FE8B5D75DF3977F7B0 /* ShippedShield.debug.xcconfig */;
+			baseConfigurationReference = 60D65299DB14E9F4DFD206D7F8851771 /* ShippedShield.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ShippedShield";
 				IBSC_MODULE = ShippedShield;
-				INFOPLIST_FILE = "Target Support Files/ShippedShield/ResourceBundle-ShippedShield-ShippedShield-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/ShippedShield/ResourceBundle-ShippedShield_ShippedShield-ShippedShield-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_NAME = ShippedShield;
+				PRODUCT_NAME = ShippedShield_ShippedShield;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1172,6 +1172,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		309EDD80376575A3D882928B0107E8C6 /* Build configuration list for PBXNativeTarget "ShippedShield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43FF8AAC8D082233C00DE51DBF692A61 /* Debug */,
+				48BC15BF2917FADFEAEC00187D0825AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1181,20 +1190,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5E0715693588B9855B2B8D2B709FC6D /* Build configuration list for PBXNativeTarget "ShippedShield-ShippedShield" */ = {
+		C00715AD23784493E0D83C72F46F74ED /* Build configuration list for PBXNativeTarget "ShippedShield-ShippedShield_ShippedShield" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				80F0AC040F77AABFE9A22CAB9E778443 /* Debug */,
-				4AF8FC41C4540C3ED4C7AF89E2494FC7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E62DB3DA2EC04A8C40C09CBD6B57648E /* Build configuration list for PBXNativeTarget "ShippedShield" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3875DE6444A45BEA6EDD07E9CC3BB13C /* Debug */,
-				0A349CECAE303EB10E710AA4DA7CAF94 /* Release */,
+				7C8FD44653BDC96BFA20C097E6735614 /* Debug */,
+				549A45560A2D695EC5F5A31D2545F81E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

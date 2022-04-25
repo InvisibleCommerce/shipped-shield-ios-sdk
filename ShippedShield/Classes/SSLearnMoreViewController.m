@@ -98,7 +98,7 @@
     
     UIImageView *logoImageView = [UIImageView new];
     NSBundle *sdkBundle = [NSBundle bundleForClass:self.class];
-    NSBundle *resourceBundle = [NSBundle bundleWithPath:[sdkBundle pathForResource:@"ShippedShield" ofType:@"bundle"]];
+    NSBundle *resourceBundle = [NSBundle bundleWithPath:[sdkBundle pathForResource:@"ShippedShield_ShippedShield" ofType:@"bundle"]];
     logoImageView.image = [UIImage imageNamed:@"header" inBundle:resourceBundle compatibleWithTraitCollection:nil];
     logoImageView.translatesAutoresizingMaskIntoConstraints = NO;
     [headerView addSubview:logoImageView];
@@ -115,7 +115,7 @@
     
     UIImageView *protectedImageView = [UIImageView new];
     NSBundle *sdkBundle = [NSBundle bundleForClass:self.class];
-    NSBundle *resourceBundle = [NSBundle bundleWithPath:[sdkBundle pathForResource:@"ShippedShield" ofType:@"bundle"]];
+    NSBundle *resourceBundle = [NSBundle bundleWithPath:[sdkBundle pathForResource:@"ShippedShield_ShippedShield" ofType:@"bundle"]];
     protectedImageView.image = [UIImage imageNamed:@"protected" inBundle:resourceBundle compatibleWithTraitCollection:nil];
     protectedImageView.translatesAutoresizingMaskIntoConstraints = NO;
     [contentView addSubview:protectedImageView];

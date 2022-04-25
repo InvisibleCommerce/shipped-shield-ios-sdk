@@ -5,6 +5,7 @@
  [![Platform](https://img.shields.io/cocoapods/p/ShippedShield.svg?style=flat)](https://cocoapods.org/pods/ShippedShield)
  [![CocoaPods compatible](https://img.shields.io/badge/CocoaPods-compatible-green.svg?style=flat)](https://cocoapods.org)
  [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg?style=flat)](https://github.com/Carthage/Carthage)
+ [![SPM compatible](https://img.shields.io/badge/SPM-compatible-green.svg?style=flat)](https://www.swift.org/package-manager)
 
 Shipped Shield offers premium package assurance for shipments that are lost, damaged or stolen. Instantly track and resolve shipment issues hassle-free with the app.
 
@@ -18,7 +19,7 @@ The ShippedShield iOS SDK requires Xcode 13.3.1 or later and is compatible with 
 
 ## Installation
 
-The ShippedShield iOS SDK is available through either [CocoaPods](https://cocoapods.org/) or [Carthage](https://github.com/Carthage/Carthage).
+The ShippedShield iOS SDK is available through [CocoaPods](https://cocoapods.org/), [Carthage](https://github.com/Carthage/Carthage), [SPM](https://www.swift.org/package-manager).
 
 ### CocoaPods
 
@@ -54,15 +55,9 @@ carthage update --use-xcframeworks
 ```
 Drag the built `.xcframework` bundles from `Carthage/Build` into the "Frameworks and Libraries" section of your application’s Xcode project.
 
-<!---
-### Swift
+### Swift Package Manager
 
-Even though `ShippedShield` is written in Objective-C, it can be used in Swift with no hassle. If you use [CocoaPods](https://cocoapods.org/),  add the following line to your [Podfile](https://guides.cocoapods.org/using/using-cocoapods.html):
-
-```ruby
-use_frameworks!
-```
--->
+[Add package dependency from xcode](https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app).
 
 ## Setup
 

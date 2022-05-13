@@ -17,7 +17,7 @@ typedef void (^ShippedShieldFeeHandler)(SSShieldOffer * _Nullable offer, NSError
  Get shield fee.
  
  @param orderValue An order value.
- @param completion A handler which includes shield fee..
+ @param completion A handler which includes shield fee.
  */
 + (void)getShieldFee:(NSDecimalNumber *)orderValue completion:(ShippedShieldFeeHandler)completion;
 

@@ -43,7 +43,7 @@ typedef NS_ENUM(NSInteger, ShippedShieldMode) {
 + (void)setMode:(ShippedShieldMode)mode;
 
 /**
- Get sdk mode. Test mode as default.
+ Get sdk mode. Development mode as default.
  */
 + (ShippedShieldMode)mode;
 

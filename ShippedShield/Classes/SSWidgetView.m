@@ -54,6 +54,7 @@ NSString * const SSUserDefaultsIsShieldEnabledKey = @"SSUserDefaultsIsShieldEnab
 - (void)loadViews
 {
     _shieldSwitch = [UISwitch new];
+    _shieldSwitch.accessibilityLabel = NSLocalizedString(@"Shield switch", nil);
     _shieldSwitch.on = YES;
     if ([[NSUserDefaults standardUserDefaults] objectForKey:SSUserDefaultsIsShieldEnabledKey]) {
         _shieldSwitch.on = [[NSUserDefaults standardUserDefaults] boolForKey:SSUserDefaultsIsShieldEnabledKey];

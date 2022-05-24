@@ -26,7 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
@@ -44,6 +45,16 @@
                BlueprintIdentifier = "6003F5AD195388D20070C39A"
                BuildableName = "ShippedShield_Tests.xctest"
                BlueprintName = "ShippedShield_Tests"
+               ReferencedContainer = "container:ShippedShield.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "579EED01283CB8070090018C"
+               BuildableName = "ShippedShield_ExampleUITests.xctest"
+               BlueprintName = "ShippedShield_ExampleUITests"
                ReferencedContainer = "container:ShippedShield.xcodeproj">
             </BuildableReference>
          </TestableReference>

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		543A1B65D7E0B778C7E47C92 /* Pods_ShippedShield_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B5AD79161EDE9706B3CF69 /* Pods_ShippedShield_Tests.framework */; };
+		579EECFB283CB3250090018C /* ShippedShieldUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 579EECFA283CB3250090018C /* ShippedShieldUnitTest.m */; };
+		579EED05283CB8070090018C /* ShippedShield_ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 579EED04283CB8070090018C /* ShippedShield_ExampleUITests.m */; };
+		579EED0F283CBC9B0090018C /* XCTestCase+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 579EED0E283CBC9B0090018C /* XCTestCase+Utils.m */; };
+		579EED12283CBCC50090018C /* XCUIElementQuery+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 579EED11283CBCC50090018C /* XCUIElementQuery+Utils.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
@@ -19,13 +23,19 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		FC1B152A9CB9917A0137D984 /* Pods_ShippedShield_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8161AC0D5863DC6C7C00A9 /* Pods_ShippedShield_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		579EED08283CB8070090018C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteInfo = ShippedShield_Example;
+		};
 		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
@@ -39,6 +49,13 @@
 		19B5AD79161EDE9706B3CF69 /* Pods_ShippedShield_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShippedShield_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38BF398E975E10F4CA9ABF08 /* ShippedShield.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ShippedShield.podspec; path = ../ShippedShield.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		46ABFACE6DA9C9842C583917 /* Pods-ShippedShield_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShippedShield_Tests.release.xcconfig"; path = "Target Support Files/Pods-ShippedShield_Tests/Pods-ShippedShield_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		579EECFA283CB3250090018C /* ShippedShieldUnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShippedShieldUnitTest.m; sourceTree = "<group>"; };
+		579EED02283CB8070090018C /* ShippedShield_ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShippedShield_ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		579EED04283CB8070090018C /* ShippedShield_ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShippedShield_ExampleUITests.m; sourceTree = "<group>"; };
+		579EED0D283CBC9B0090018C /* XCTestCase+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCTestCase+Utils.h"; sourceTree = "<group>"; };
+		579EED0E283CBC9B0090018C /* XCTestCase+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "XCTestCase+Utils.m"; sourceTree = "<group>"; };
+		579EED10283CBCC50090018C /* XCUIElementQuery+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCUIElementQuery+Utils.h"; sourceTree = "<group>"; };
+		579EED11283CBCC50090018C /* XCUIElementQuery+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "XCUIElementQuery+Utils.m"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ShippedShield_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShippedShield_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,7 +73,6 @@
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +85,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		579EECFF283CB8070090018C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F587195388D20070C39A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -93,12 +116,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		579EED03283CB8070090018C /* ShippedShield_ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				579EED04283CB8070090018C /* ShippedShield_ExampleUITests.m */,
+				579EED0D283CBC9B0090018C /* XCTestCase+Utils.h */,
+				579EED0E283CBC9B0090018C /* XCTestCase+Utils.m */,
+				579EED10283CBCC50090018C /* XCUIElementQuery+Utils.h */,
+				579EED11283CBCC50090018C /* XCUIElementQuery+Utils.m */,
+			);
+			path = ShippedShield_ExampleUITests;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for ShippedShield */,
 				6003F5B5195388D20070C39A /* Tests */,
+				579EED03283CB8070090018C /* ShippedShield_ExampleUITests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				7541CD220E945D618E1C052D /* Pods */,
@@ -110,6 +146,7 @@
 			children = (
 				6003F58A195388D20070C39A /* ShippedShield_Example.app */,
 				6003F5AE195388D20070C39A /* ShippedShield_Tests.xctest */,
+				579EED02283CB8070090018C /* ShippedShield_ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,7 +194,7 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
+				579EECFA283CB3250090018C /* ShippedShieldUnitTest.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -197,6 +234,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		579EED01283CB8070090018C /* ShippedShield_ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 579EED0A283CB8070090018C /* Build configuration list for PBXNativeTarget "ShippedShield_ExampleUITests" */;
+			buildPhases = (
+				579EECFE283CB8070090018C /* Sources */,
+				579EECFF283CB8070090018C /* Frameworks */,
+				579EED00283CB8070090018C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				579EED09283CB8070090018C /* PBXTargetDependency */,
+			);
+			name = ShippedShield_ExampleUITests;
+			productName = ShippedShield_ExampleUITests;
+			productReference = 579EED02283CB8070090018C /* ShippedShield_ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		6003F589195388D20070C39A /* ShippedShield_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "ShippedShield_Example" */;
@@ -245,6 +300,12 @@
 				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = "Victor Zhu";
 				TargetAttributes = {
+					579EED01283CB8070090018C = {
+						CreatedOnToolsVersion = 13.4;
+						DevelopmentTeam = 894XY7M9SU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6003F589195388D20070C39A;
+					};
 					6003F589195388D20070C39A = {
 						DevelopmentTeam = 894XY7M9SU;
 					};
@@ -268,11 +329,19 @@
 			targets = (
 				6003F589195388D20070C39A /* ShippedShield_Example */,
 				6003F5AD195388D20070C39A /* ShippedShield_Tests */,
+				579EED01283CB8070090018C /* ShippedShield_ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		579EED00283CB8070090018C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F588195388D20070C39A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -360,6 +429,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		579EECFE283CB8070090018C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				579EED0F283CBC9B0090018C /* XCTestCase+Utils.m in Sources */,
+				579EED12283CBCC50090018C /* XCUIElementQuery+Utils.m in Sources */,
+				579EED05283CB8070090018C /* ShippedShield_ExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F586195388D20070C39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,13 +453,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				579EECFB283CB3250090018C /* ShippedShieldUnitTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		579EED09283CB8070090018C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6003F589195388D20070C39A /* ShippedShield_Example */;
+			targetProxy = 579EED08283CB8070090018C /* PBXContainerItemProxy */;
+		};
 		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* ShippedShield_Example */;
@@ -416,6 +500,61 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		579EED0B283CB8070090018C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 894XY7M9SU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.invisiblecommerce.touchOfModern.ShippedShield-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShippedShield_Example;
+			};
+			name = Debug;
+		};
+		579EED0C283CB8070090018C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 894XY7M9SU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.invisiblecommerce.touchOfModern.ShippedShield-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShippedShield_Example;
+			};
+			name = Release;
+		};
 		6003F5BD195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -602,6 +741,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		579EED0A283CB8070090018C /* Build configuration list for PBXNativeTarget "ShippedShield_ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				579EED0B283CB8070090018C /* Debug */,
+				579EED0C283CB8070090018C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6003F585195388D10070C39A /* Build configuration list for PBXProject "ShippedShield" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

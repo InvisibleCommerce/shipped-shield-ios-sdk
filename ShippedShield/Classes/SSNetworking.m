@@ -14,11 +14,11 @@ static NSString * const SSAPIProductionBaseURL = @"https://api.shippedsuite.com/
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
 
-NSErrorDomain const SSSDKErrorDomain = @"com.shippedsuite.error";
+NSErrorDomain const SSSDKErrorDomain = @"com.invisiblecommerce.shippedshield.error";
 
 #else
 
-NSString *const SSSDKErrorDomain = @"com.shippedsuite.error";
+NSString *const SSSDKErrorDomain = @"com.invisiblecommerce.shippedshield.error";
 
 #endif
 

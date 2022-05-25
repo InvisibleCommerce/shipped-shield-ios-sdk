@@ -3,7 +3,7 @@
 //  ShippedShield_ExampleUITests
 //
 //  Created by Victor Zhu on 2022/5/24.
-//  Copyright © 2022 Victor Zhu. All rights reserved.
+//  Copyright (c) 2022 Invisible Commerce Limited. All rights reserved.
 //
 
 #import "XCTestCase+Utils.h"

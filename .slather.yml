@@ -1,0 +1,8 @@
+# .slather.yml
+
+coverage_service: cobertura_xml
+workspace: ./Example/ShippedShield.xcworkspace
+xcodeproj: ./Example/ShippedShield.xcodeproj
+scheme: ShippedShield-Example
+source_directory: ShippedShield/Classes
+binary_basename: ShippedShield

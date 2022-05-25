@@ -35,6 +35,24 @@
     XCTAssertNotNil(widgetView);
 }
 
+- (void)testRequest
+{
+    SSRequest *request = [SSRequest new];
+    XCTAssertThrows(request.path);
+    XCTAssertTrue(request.method == SSHTTPMethodGET);
+    XCTAssertNotNil(request.headers);
+    XCTAssertNil(request.parameters);
+    XCTAssertNil(request.postData);
+    XCTAssertNil(request.responseClass);
+}
+
+- (void)testResponse
+{
+    NSData *data = [NSData new];
+    XCTAssertThrows([SSResponse parse:data]);
+    XCTAssertNil([SSResponse parseError:data code:-1]);
+}
+
 - (void)testShieldFee
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"track test"];

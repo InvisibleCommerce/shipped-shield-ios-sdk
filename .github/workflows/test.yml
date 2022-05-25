@@ -23,19 +23,5 @@ jobs:
       - name: Test
         run: xcodebuild -workspace ./Example/ShippedShield.xcworkspace -scheme ShippedShield-Example -enableCodeCoverage YES -destination 'platform=iOS Simulator,OS=15.2,name=iPhone 12' build test
 
-      - name: Install bundle
-        run: |
-          bundle config path vendor/bundle
-          bundle install --without=documentation --jobs 4 --retry 3
-
-      - name: Extract branch name
-        shell: bash
-        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-        id: get_branch
-
-      - name: Upload code coverage report
-        run: bundle exec slather
-        env:
-          GIT_BRANCH: ${{ steps.get_branch.outputs.branch }}
-          CI_PULL_REQUEST: ${{ github.event.number }}
-          COVERAGE_ACCESS_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3

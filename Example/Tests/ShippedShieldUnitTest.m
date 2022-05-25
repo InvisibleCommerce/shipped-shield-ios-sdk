@@ -19,7 +19,20 @@
 {
     [super setUp];
     [ShippedShield configurePublicKey:@"pk_development_117c2ee46c122fb0ce070fbc984e6a4742040f05a1c73f8a900254a1933a0112"];
+}
+
+- (void)testMode
+{
     [ShippedShield setMode:ShippedShieldDevelopmentMode];
+    XCTAssertEqual([ShippedShield mode], ShippedShieldDevelopmentMode);
+    XCTAssertEqualObjects([ShippedShield defaultBaseURL], [NSURL URLWithString:@"https://api-staging.shippedsuite.com/"]);
+    [ShippedShield setDefaultBaseURL:[NSURL URLWithString:@"https://api-staging.shippedsuite.com/"]];
+}
+
+- (void)testWidgetView
+{
+    SSWidgetView *widgetView = [[SSWidgetView alloc] initWithFrame:CGRectZero];
+    XCTAssertNotNil(widgetView);
 }
 
 - (void)testShieldFee
@@ -37,7 +50,9 @@
 
 - (void)testLogger
 {
+    [SSLogger sharedLogger].enableLogPrinted = YES;
     [[SSLogger sharedLogger] logEvent:@"test"];
+    XCTAssertThrows([[SSLogger sharedLogger] logException:@"exception"]);
 }
 
 - (void)testUtils

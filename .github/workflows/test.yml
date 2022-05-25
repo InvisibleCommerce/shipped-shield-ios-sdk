@@ -18,10 +18,10 @@ jobs:
         run: ls -n /Applications/ | grep Xcode*
 
       - name: Set Xcode Version
-        run: sudo xcode-select -s /Applications/Xcode_13.4.app/Contents/Developer
+        run: sudo xcode-select -s /Applications/Xcode_13.2.app/Contents/Developer
 
       - name: Test
-        run: xcodebuild -workspace ./Example/ShippedShield.xcworkspace -scheme ShippedShield-Example -enableCodeCoverage YES -destination 'platform=iOS Simulator,OS=15.5,name=iPhone 12' build test
+        run: xcodebuild -workspace ./Example/ShippedShield.xcworkspace -scheme ShippedShield-Example -enableCodeCoverage YES -destination 'platform=iOS Simulator,OS=14.3,name=iPhone 12' build test
 
       - name: Install bundle
         run: |

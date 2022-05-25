@@ -6,3 +6,6 @@ xcodeproj: ./Example/ShippedShield.xcodeproj
 scheme: ShippedShield-Example
 source_directory: ShippedShield/Classes
 binary_basename: ShippedShield
+ignore:
+  - Carthage/*
+  - Example/*

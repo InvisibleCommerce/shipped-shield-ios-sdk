@@ -6,6 +6,7 @@
  [![CocoaPods compatible](https://img.shields.io/badge/CocoaPods-compatible-green.svg?style=flat)](https://cocoapods.org)
  [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg?style=flat)](https://github.com/Carthage/Carthage)
  [![SPM compatible](https://img.shields.io/badge/SPM-compatible-green.svg?style=flat)](https://www.swift.org/package-manager)
+ [![codecov](https://codecov.io/gh/InvisibleCommerce/shipped-shield-ios-sdk/branch/main/graph/badge.svg?token=DUeMBvpJjO)](https://codecov.io/gh/InvisibleCommerce/shipped-shield-ios-sdk)
 
 Shipped Shield offers premium package assurance for shipments that are lost, damaged or stolen. Instantly track and resolve shipment issues hassle-free with the app.
 

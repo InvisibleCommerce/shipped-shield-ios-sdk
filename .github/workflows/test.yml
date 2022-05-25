@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: macos-11
+    runs-on: macos-latest
 
     steps:
       - name: Checkout repository
@@ -18,7 +18,7 @@ jobs:
         run: ls -n /Applications/ | grep Xcode*
 
       - name: Set Xcode Version
-        run: sudo xcode-select -s /Applications/Xcode_13.0.app/Contents/Developer
+        run: sudo xcode-select -s /Applications/Xcode_13.4.app/Contents/Developer
 
       - name: Test
         run: xcodebuild -workspace ./Example/ShippedShield.xcworkspace -scheme ShippedShield-Example -enableCodeCoverage YES -destination 'platform=iOS Simulator,OS=15.5,name=iPhone 12' build test

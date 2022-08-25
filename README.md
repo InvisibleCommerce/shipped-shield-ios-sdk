@@ -8,7 +8,7 @@
  [![SPM compatible](https://img.shields.io/badge/SPM-compatible-green.svg?style=flat)](https://www.swift.org/package-manager)
  [![codecov](https://codecov.io/gh/InvisibleCommerce/shipped-shield-ios-sdk/branch/main/graph/badge.svg?token=DUeMBvpJjO)](https://codecov.io/gh/InvisibleCommerce/shipped-shield-ios-sdk)
 
-**Note: This version of the SDK is deprecated in favor of our [Suite SDK](https://github.com/InvisibleCommerce/shipped-suite-ios-client-sdk). See the [MIGRATION](MIGRATION)**
+**Note: This version of the SDK is deprecated in favor of our [Suite SDK](https://github.com/InvisibleCommerce/shipped-suite-ios-client-sdk). See the [MIGRATION](MIGRATION.md)**
 
 Shipped Shield offers premium package assurance for shipments that are lost, damaged or stolen. Instantly track and resolve shipment issues hassle-free with the app.
 

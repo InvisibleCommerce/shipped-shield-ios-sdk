@@ -1,6 +1,6 @@
 {
   "name": "ShippedShield",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "summary": "Integrate ShippedShield into your iOS app.",
   "homepage": "https://github.com/InvisibleCommerce/shipped-shield-ios-sdk",
   "license": {
@@ -10,7 +10,7 @@
   "authors": "Invisible Commerce",
   "source": {
     "git": "https://github.com/InvisibleCommerce/shipped-shield-ios-sdk.git",
-    "tag": "0.1.5"
+    "tag": "0.1.6"
   },
   "platforms": {
     "ios": "11.0"

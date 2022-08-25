@@ -1,0 +1,4 @@
+module ShippedShield {
+    umbrella "/Users/Victor/Documents/Projects/Shipped-sdk-ios/ShippedShield"
+    export *
+}

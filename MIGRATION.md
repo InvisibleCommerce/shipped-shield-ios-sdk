@@ -74,6 +74,8 @@ widgetView.delegate = self;
 [widgetView updateOrderValue:cartValueRoundedNumber];
 ```
 
+### Customization
+
 - Send the Shield Fee request
 
 Replace

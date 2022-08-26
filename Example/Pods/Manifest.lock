@@ -1,5 +1,5 @@
 PODS:
-  - ShippedShield (0.1.5)
+  - ShippedShield (0.1.6)
 
 DEPENDENCIES:
   - ShippedShield (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ShippedShield: 2cbad997f5774abdd65d0deeb852ce79647dc695
+  ShippedShield: 5d72e1a501572e9ce87cc5051238b403f9f14e90
 
 PODFILE CHECKSUM: a0846a40cdf979705d6ac12a0d30b9c3a92a725b
 

@@ -1,4 +1,4 @@
-# ShippedShield iOS SDK
+# ShippedShield iOS SDK (Deprecated)
 
  [![Platform](https://img.shields.io/cocoapods/p/ShippedShield.svg?style=flat)](https://cocoapods.org/pods/ShippedShield)
  [![Version](https://img.shields.io/cocoapods/v/ShippedShield.svg?style=flat)](https://cocoapods.org/pods/ShippedShield)
@@ -7,6 +7,8 @@
  [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-green.svg?style=flat)](https://github.com/Carthage/Carthage)
  [![SPM compatible](https://img.shields.io/badge/SPM-compatible-green.svg?style=flat)](https://www.swift.org/package-manager)
  [![codecov](https://codecov.io/gh/InvisibleCommerce/shipped-shield-ios-sdk/branch/main/graph/badge.svg?token=DUeMBvpJjO)](https://codecov.io/gh/InvisibleCommerce/shipped-shield-ios-sdk)
+
+**Note: This version of the SDK is deprecated in favor of our [Suite SDK](https://github.com/InvisibleCommerce/shipped-suite-ios-client-sdk). See the [MIGRATION](MIGRATION.md)**
 
 Shipped Shield offers premium package assurance for shipments that are lost, damaged or stolen. Instantly track and resolve shipment issues hassle-free with the app.
 
@@ -29,7 +31,7 @@ If you don't have an existing `Podfile`, run the following command to create one
 ```ruby
 pod init
 ```
-Add this line to your Podfile:
+Add this line to your `Podfile`:
 ```ruby
 pod 'ShippedShield'
 ```
@@ -46,7 +48,7 @@ pod update ShippedShield
 ### Carthage
 
 If you haven't already, install the latest version of [Carthage](https://github.com/Carthage/Carthage).
-To use it, you need create a `Cartfile` and add this line to your Cartfile:
+To use it, you need create a `Cartfile` and add this line to your `Cartfile`:
 ```ogdl
 github "InvisibleCommerce/shipped-shield-ios-sdk"
 ```

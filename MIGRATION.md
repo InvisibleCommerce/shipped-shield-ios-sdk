@@ -67,8 +67,8 @@ With
 
 ```objective-c
 SSWidgetView *widgetView = [[SSWidgetView alloc] initWithFrame:CGRectMake(x, y, width, height)];
-widgetView.type = ShippedSuiteTypeGreenAndShield;
-widgetView.isRespectServer = YES;
+widgetView.type = ShippedSuiteTypeShield;
+widgetView.isRespectServer = NO;
 widgetView.delegate = self;
 
 [widgetView updateOrderValue:cartValueRoundedNumber];

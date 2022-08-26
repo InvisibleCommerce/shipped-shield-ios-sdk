@@ -122,7 +122,7 @@ if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
 With
 
 ```objective-c
-SSLearnMoreViewController *controller = [[SSLearnMoreViewController alloc] initWithType:ShippedSuiteTypeGreen];
+SSLearnMoreViewController *controller = [[SSLearnMoreViewController alloc] initWithType:ShippedSuiteTypeShield];
 UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
 if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
     nav.modalPresentationStyle = UIModalPresentationFormSheet;
